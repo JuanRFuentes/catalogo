@@ -2268,3 +2268,26 @@
         display: none;
     }
 }
+
+/* Ajuste leve de proporciones de Detalles en laptop y escritorio. */
+@media (min-width:801px) {
+    #homeProductDetails .details-inner { min-height:470px; }
+    #homeProductDetails .details-options {
+        height:300px;
+        min-height:300px;
+        flex-basis:300px;
+    }
+    #homeProductDetails .details-gender { min-height:41px; }
+    #homeProductDetails .details-size-group .details-size {
+        height:36px;
+        min-height:36px;
+    }
+    #homeProductDetails .details-quantity { min-height:98px; }
+    #homeProductDetails .details-add-cart { padding-top:14px; padding-bottom:14px; }
+    #homeProductDetails .details-options-panel .details-colors .details-color,
+    #homeProductDetails .details-options-panel .details-colors .details-color-expand {
+        width:32px;
+        height:32px;
+        flex-basis:32px;
+    }
+}
