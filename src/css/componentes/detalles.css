@@ -2056,8 +2056,6 @@
     .details-color-browser-heading { margin-bottom:4px; }
 }
 
-/* Laptop y escritorio: el panel de detalle se adapta al contenido y evita
-   reservar una columna alta que empuje la cotización fuera de la pantalla. */
 @media (max-width:520px) {
     .details-options.colors-expanded {
         height:185px;
@@ -2264,8 +2262,6 @@
     margin:2px 0 0;
 }
 
-/* En PC y laptop, mostrar el detalle compacto para que el selector y el
-   botón de cotización permanezcan dentro del área visible. */
 /* En laptops y pantallas grandes, despeja el visor de la etiqueta superpuesta. */
 @media (min-width: 1025px) {
     #homeProductDetails .details-image-label {
