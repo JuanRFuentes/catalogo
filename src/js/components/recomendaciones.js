@@ -4,6 +4,9 @@
 import {
     abrirProducto
 } from './producto-view.js';
+import {
+    mostrarCategoriaCompletaPorNombre
+} from './colecciones.js';
 
 /* =========================================================
    IMAGEN PRINCIPAL
@@ -542,17 +545,12 @@ export function renderizarRecomendaciones(
 
   const categoria =
     categorias.find(
-      item =>
-        String(
-          item?.nombre || ''
-        )
-          .trim()
-          .toLowerCase() ===
-        String(
-          nombreCategoria
-        )
-          .trim()
-          .toLowerCase()
+      item => {
+        const buscado = String(nombreCategoria).trim().toLocaleLowerCase('es');
+        const nombre = String(item?.nombre || '').trim().toLocaleLowerCase('es');
+        const carpeta = String(item?.carpeta || '').trim().toLocaleLowerCase('es');
+        return nombre === buscado || carpeta === buscado;
+      }
     );
 
 
@@ -564,6 +562,15 @@ export function renderizarRecomendaciones(
     );
 
     return;
+  }
+
+  const botonVerTodo = document.querySelector('#homeRecommendationsSeeAll');
+  if (botonVerTodo) {
+    botonVerTodo.onclick = () => {
+      mostrarCategoriaCompletaPorNombre(
+        categoria.nombre || categoria.carpeta || nombreCategoria
+      );
+    };
   }
 
 

@@ -382,6 +382,12 @@
 
     }
 
+    /* Ver todo debe mostrar la lista completa también en móvil. */
+    .home-category-full .home-category-grid
+    .home-collection-card:nth-child(n+5){
+        display:block;
+    }
+
 }
 
 

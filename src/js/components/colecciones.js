@@ -1086,6 +1086,34 @@ function mostrarCategoriaCompleta(
 }
 
 
+/* Abre todos los diseños de una categoría desde cualquier sección del home. */
+export function mostrarCategoriaCompletaPorNombre(nombre) {
+    const buscado = String(nombre || '').trim().toLocaleLowerCase('es');
+    const categoria = obtenerCategorias().find(item => {
+        const titulo = String(item?.nombre || '').trim().toLocaleLowerCase('es');
+        const carpeta = String(item?.carpeta || '').trim().toLocaleLowerCase('es');
+        return titulo === buscado || carpeta === buscado;
+    });
+
+    if (!categoria) {
+        console.warn('No se encontró la categoría configurada para Ver todo:', nombre);
+        return false;
+    }
+
+    mostrarCategoriaCompleta(categoria);
+
+    const claves = [categoria.nombre, categoria.carpeta]
+        .filter(Boolean)
+        .map(valor => String(valor).trim().toLocaleLowerCase('es'));
+    document.querySelectorAll('#homeCategoryNav .home-cat').forEach(boton => {
+        const clave = String(boton.dataset.categoria || '').trim().toLocaleLowerCase('es');
+        boton.classList.toggle('active', claves.includes(clave));
+    });
+
+    return true;
+}
+
+
 /* =========================================================
    BOTÓN TODOS
 ========================================================= */
