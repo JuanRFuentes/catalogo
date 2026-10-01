@@ -2058,16 +2058,6 @@
 
 /* Laptop y escritorio: el panel de detalle se adapta al contenido y evita
    reservar una columna alta que empuje la cotización fuera de la pantalla. */
-@media (min-width:801px) {
-    #homeProductDetails.is-open { max-height: min(760px, 100dvh); }
-    #homeProductDetails .details-inner { min-height: 0; }
-    #homeProductDetails .details-visual { min-height: 245px; }
-    #homeProductDetails .details-options {
-        height: auto;
-        min-height: 0;
-        flex-basis: auto;
-    }
-}
 @media (max-width:520px) {
     .details-options.colors-expanded {
         height:185px;
@@ -2276,36 +2266,6 @@
 
 /* En PC y laptop, mostrar el detalle compacto para que el selector y el
    botón de cotización permanezcan dentro del área visible. */
-@media (min-width:801px) {
-    #homeProductDetails .details-inner {
-        min-height:0;
-        gap:clamp(14px, 2vw, 26px);
-        padding:10px;
-    }
-
-    #homeProductDetails .details-visual {
-        min-height:clamp(210px, 38vh, 330px);
-    }
-
-    #homeProductDetails .details-shirt {
-        width:min(82%, 330px);
-    }
-
-    #homeProductDetails .details-info {
-        justify-content:flex-start;
-        padding:0 4px;
-    }
-
-    #homeProductDetails .details-options:not(.colors-expanded) {
-        height:auto;
-        min-height:0;
-        flex:0 1 auto;
-        gap:8px;
-        margin-top:10px;
-        margin-bottom:4px;
-    }
-}
-
 /* En laptops y pantallas grandes, despeja el visor de la etiqueta superpuesta. */
 @media (min-width: 1025px) {
     #homeProductDetails .details-image-label {
