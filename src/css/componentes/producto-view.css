@@ -1,0 +1,1343 @@
+
+/* =========================================================
+   VISIÓN CREATIVA — PANEL UNIVERSAL DE PRODUCTO
+   CSS COMPLETO — HEADER COMPARTIDO
+========================================================= */
+
+
+/* =========================================================
+   1. CONTENEDOR Y ESTADO
+========================================================= */
+
+.producto-view {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    visibility: hidden;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.producto-view.is-open {
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   2. FONDO
+========================================================= */
+
+.producto-view-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 20, 45, .28);
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.producto-view.is-open .producto-view-overlay {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   3. PANEL LATERAL
+========================================================= */
+
+.producto-view-panel {
+    --producto-fondo: #f7d7df;
+    --vc-cian: #00a8e8;
+    --vc-fucsia: #f20a80;
+    --vc-marino: #081c4a;
+    --vc-blanco: #ffffff;
+
+    position: absolute;
+    inset: 0 0 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    width: min(440px, 42vw);
+    height: 100%;
+    height: 100dvh;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: var(--producto-fondo);
+
+    box-shadow:
+        -12px 0 40px rgba(15, 35, 65, .12);
+
+    transform: translate3d(100%, 0, 0);
+
+    transition:
+        transform .42s cubic-bezier(.22, .75, .25, 1),
+        background-color .8s ease;
+
+    will-change: transform;
+}
+
+.producto-view.is-open .producto-view-panel {
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================================================
+   4. CABECERA DEL VISOR
+========================================================= */
+
+.producto-view-header {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    flex: 0 0 auto;
+    width: 100%;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   5. HEADER COMPARTIDO
+========================================================= */
+
+.producto-view-header-shared {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+
+/* Header de escritorio dentro del visor */
+
+.home-topbar-producto {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 8px 16px 0;
+
+    box-sizing: border-box;
+
+    background: transparent;
+}
+
+
+/* Logo dentro del visor */
+
+.home-topbar-producto .home-logo-image {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 150px;
+    max-height: 48px;
+
+    margin: 0;
+
+    object-fit: contain;
+
+    transition:
+        left .25s ease,
+        transform .25s ease;
+}
+
+
+/* Acciones del header */
+
+.home-topbar-producto .home-header-actions {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    padding: 0;
+}
+
+
+/* Botones del header */
+
+.home-topbar-producto .home-header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 38px;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    border: 1px solid rgba(0, 168, 232, .15);
+    border-radius: 50%;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, .88);
+    color: var(--vc-marino, #081c4a);
+
+    box-shadow:
+        0 4px 14px rgba(8, 28, 74, .08);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.home-topbar-producto .home-header-button:hover {
+    background: var(--vc-cian, #00a8e8);
+    color: #fff;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 5px 16px rgba(0, 168, 232, .25);
+}
+
+.home-topbar-producto .home-header-button:active {
+    transform: scale(.92);
+}
+
+
+/* Iconos del header */
+
+.home-topbar-producto .home-header-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 23px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   6. CHIPS DE INFORMACIÓN DEL PRODUCTO
+========================================================= */
+
+.producto-view-header-chips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    width: 100%;
+    min-height: 46px;
+
+    padding: 4px 16px 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* Estilo general de los chips */
+
+.producto-view-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    min-height: 32px;
+
+    padding: 6px 13px;
+
+    border: 1px solid rgba(255, 255, 255, .65);
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, .48);
+    color: #172b4d;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: .3px;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 3px 12px rgba(36, 54, 90, .06),
+        inset 0 1px 0 rgba(255, 255, 255, .5);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* Chip de vista: frente / espalda */
+
+.producto-view-chip-vista {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 36px;
+
+    padding: 8px 19px;
+
+    border: 1px solid rgba(0, 168, 232, .2);
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    background: var(--vc-cian, #00a8e8);
+    color: var(--vc-blanco, #fff);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 800;
+
+    line-height: 1;
+    letter-spacing: .5px;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 5px 16px rgba(0, 168, 232, .2),
+        inset 0 1px 0 rgba(255, 255, 255, .25);
+
+    transition:
+        background .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* Chip SKU */
+
+.producto-view-chip-sku {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    min-height: 32px;
+
+    padding: 7px 12px;
+
+    border: 1px solid rgba(242, 10, 128, .2);
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, .88);
+    color: var(--vc-marino, #081c4a);
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 800;
+
+    line-height: 1;
+    letter-spacing: .35px;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 4px 12px rgba(8, 28, 74, .06),
+        inset 0 1px 0 rgba(255, 255, 255, .9);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        color .25s ease;
+}
+
+.producto-view-chip-sku:hover {
+    border-color: var(--vc-fucsia, #f20a80);
+    background: #fce4f1;
+}
+
+
+/* =========================================================
+   7. ÁREA DESPLAZABLE
+========================================================= */
+
+.producto-view-content {
+    flex: 1 1 auto;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+
+    box-sizing: border-box;
+}
+
+.producto-view-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Contenido principal */
+
+.producto-view-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    width: 100%;
+    min-height: 100%;
+
+    padding: 16px 24px 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   8. MOCKUP DE PLAYERA
+========================================================= */
+
+.producto-view-shirt-wrap {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 370px;
+}
+
+.producto-view-gallery-controls {
+    position:absolute;
+    z-index:5;
+    inset:50% 0 auto;
+    display:flex;
+    justify-content:space-between;
+    padding:0 4px;
+    transform:translateY(-50%);
+    pointer-events:none;
+}
+.producto-view-gallery-controls button {
+    display:grid;
+    place-items:center;
+    width:40px;
+    height:40px;
+    padding:0;
+    border:1px solid rgba(255,255,255,.86);
+    border-radius:50%;
+    background:rgba(255,255,255,.88);
+    color:#1a2b57;
+    box-shadow:0 4px 14px rgba(8,28,74,.14);
+    cursor:pointer;
+    pointer-events:auto;
+    transition:background .18s ease,color .18s ease,transform .18s ease;
+}
+.producto-view-gallery-controls button:hover:not(:disabled) {
+    background:#00a8e8;
+    color:#fff;
+    transform:scale(1.06);
+}
+.producto-view-gallery-controls button:disabled { opacity:.42; cursor:default; }
+.producto-view-gallery-controls svg { width:21px; height:21px; }
+
+
+/* Marco del mockup */
+
+.producto-view-shirt {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    isolation: isolate;
+}
+
+
+/* Imagen base de la playera */
+
+.producto-view-shirt-base {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* Estampado */
+
+.producto-view-print {
+    position: absolute;
+    z-index: 3;
+
+    display: block;
+
+    width: 40%;
+    height: 40%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* =========================================================
+   9. POSICIONES DEL ESTAMPADO — FRENTE
+========================================================= */
+
+.producto-view-print.print-front.print-top {
+    width: 40%;
+    height: 40%;
+
+    left: 30%;
+    top: 18%;
+}
+
+.producto-view-print.print-front.print-center {
+    top: 28%;
+    left: 30%;
+}
+
+
+/* =========================================================
+   10. POSICIONES DEL ESTAMPADO — ESPALDA
+========================================================= */
+
+.producto-view-print.print-back.print-top {
+    top: 10%;
+    left: 30%;
+}
+
+.producto-view-print.print-back.print-center {
+    top: 24%;
+    left: 30%;
+}
+
+
+/* =========================================================
+   11. CONTRASTE SOBRE PLAYERA BLANCA
+========================================================= */
+
+.producto-view-print.contraste-blanco {
+    filter: drop-shadow(
+        0 0 1px
+        rgba(0, 0, 0, .72)
+    );
+}
+
+
+/* =========================================================
+   12. BOTÓN PERSONALIZAR
+========================================================= */
+
+.producto-view-customize {
+    width: min(100%, 320px);
+    min-height: 52px;
+
+    padding: 12px 24px;
+
+    border: 0;
+    border-radius: 30px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+    color: #172b4d;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 24px rgba(36, 54, 90, .12);
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+.producto-view-customize:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 28px rgba(36, 54, 90, .18);
+}
+
+.producto-view-customize:active {
+    transform: scale(.98);
+}
+
+
+/* =========================================================
+   13. ESCRITORIO Y LAPTOP
+========================================================= */
+
+@media (min-width: 1025px) {
+
+    #catalogHome {
+        transition:
+            width .42s cubic-bezier(.22, .75, .25, 1),
+            max-width .42s ease;
+    }
+
+    #catalogHome.producto-view-open {
+        width: calc(100% - min(440px, 42vw));
+        max-width: none;
+    }
+
+    .producto-view-panel {
+        width: min(440px, 42vw);
+    }
+
+    .home-topbar-producto {
+        height: 70px;
+        padding: 8px 16px 0;
+    }
+
+    .home-topbar-producto .home-logo-image {
+        max-width: 150px;
+        max-height: 48px;
+        margin-left: 0;
+    }
+
+    .home-topbar-producto .home-header-actions {
+        gap: 8px;
+    }
+
+    .producto-view-header-chips {
+        padding: 4px 16px 10px;
+    }
+}
+
+@media (max-width:1024px) {
+    .home-topbar,
+    .home-topbar-producto {
+        height:64px;
+        min-height:64px;
+        padding-top:8px;
+        align-items:center;
+    }
+    .home-topbar .home-logo-image,
+    .home-topbar.scrolled .home-logo-image,
+    .home-topbar-producto .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        max-width:min(180px, 42vw);
+        max-height:44px;
+        margin:0;
+        transform:translate(-50%,-50%);
+    }
+    .home-topbar .home-header-actions,
+    .home-topbar-producto .home-header-actions,
+    .home-topbar.scrolled .home-header-actions {
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        justify-content:space-between;
+        width:100%;
+        padding:0 5%;
+        box-sizing:border-box;
+        transform:translateY(-50%);
+        pointer-events:none;
+    }
+    .home-topbar .home-header-button,
+    .home-topbar-producto .home-header-button {
+        width:36px;
+        height:36px;
+        flex-basis:36px;
+        pointer-events:auto;
+    }
+    .home-topbar-producto .home-header-button {
+        border:0;
+        box-shadow:none;
+    }
+}
+
+@media (max-width:1024px) {
+    .home-topbar.details-open:not(.home-topbar-producto) .home-header-actions {
+        justify-content:space-between;
+    }
+    .home-topbar.details-open:not(.home-topbar-producto) .home-header-button:first-child {
+        display:flex;
+    }
+    .home-topbar.details-open:not(.home-topbar-producto) .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+}
+.home-topbar:not(.scrolled):not(.home-topbar-producto) .home-header-actions {
+    justify-content:flex-end;
+}
+.home-topbar.details-open:not(.home-topbar-producto) .home-header-actions {
+    justify-content:space-between;
+}
+.home-topbar.details-open:not(.home-topbar-producto) .home-header-button:first-child {
+    display:flex;
+}
+@media (max-width:1024px) {
+    .home-topbar.details-open:not(.home-topbar-producto) .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+}
+
+/* Laptops: panel universal más bajo, compacto y con el header bien asentado. */
+@media (min-width: 1025px) and (max-width: 1599px) {
+    .producto-view-panel {
+        top: 34px;
+        bottom: 20px;
+        height: auto;
+        max-height: calc(100dvh - 54px);
+        border-radius: 24px 0 0 24px;
+    }
+
+    .producto-view-main {
+        min-height: 0;
+        justify-content: flex-start;
+        gap: 14px;
+        padding: 20px 22px 24px;
+    }
+
+    .producto-view-shirt-wrap {
+        max-width: 330px;
+    }
+}
+
+
+/* =========================================================
+   14. MÓVIL Y TABLET — PANEL A PANTALLA COMPLETA
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .producto-view {
+        position: fixed;
+        inset: 0;
+
+        z-index: 99999;
+
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+
+        visibility: hidden;
+        pointer-events: none;
+
+        overflow: hidden;
+    }
+
+    .producto-view.is-open {
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .producto-view-overlay {
+        display: none;
+    }
+
+
+    /* Panel a pantalla completa */
+
+    .producto-view-panel {
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: none;
+
+        height: 100%;
+        height: 100dvh;
+
+        min-height: 0;
+        margin: 0;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        transform: translate3d(0, 100%, 0);
+
+        transition:
+            transform .42s cubic-bezier(.22, .75, .25, 1);
+
+        box-sizing: border-box;
+    }
+
+    .producto-view.is-open .producto-view-panel {
+        transform: translate3d(0, 0, 0);
+    }
+
+
+    /* Header compartido en móvil y tablet */
+
+    .home-topbar-producto {
+        position: relative;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 78px;
+
+        padding: 16px 6% 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Logo centrado */
+
+    .home-topbar-producto .home-logo-image {
+        position: absolute;
+
+        top: 16px;
+        left: 50%;
+
+        max-width: min(180px, 42vw);
+        max-height: 56px;
+
+        margin-left: 0;
+
+        transform: translateX(-50%);
+    }
+
+
+    /* Botones a los extremos */
+
+    .home-topbar-producto .home-header-actions {
+        position: absolute;
+
+        top: 16px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        padding: 0 6%;
+
+        box-sizing: border-box;
+
+        pointer-events: none;
+    }
+
+    .home-topbar-producto .home-header-button {
+        pointer-events: auto;
+    }
+
+
+    /* Chips debajo del header */
+
+    .producto-view-header-chips {
+        justify-content: center;
+
+        gap: 8px;
+
+        min-height: 46px;
+
+        padding: 4px 16px 10px;
+    }
+
+
+    /* Contenido */
+
+    .producto-view-content {
+        flex: 1 1 auto;
+
+        min-height: 0;
+        height: auto;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .producto-view-main {
+        min-height: 100%;
+
+        justify-content: center;
+
+        gap: 18px;
+
+        padding: 12px 22px 28px;
+
+        box-sizing: border-box;
+    }
+
+    .producto-view-shirt-wrap {
+        width: min(100%, 440px);
+        max-width: 440px;
+    }
+
+    .producto-view-shirt {
+        width: 100%;
+    }
+
+    .producto-view-customize {
+        width: min(100%, 360px);
+
+        min-height: 54px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   15. TELÉFONOS PEQUEÑOS
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .home-topbar-producto {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .home-topbar-producto .home-logo-image {
+        max-width: min(165px, 42vw);
+        max-height: 52px;
+    }
+
+    .home-topbar-producto .home-header-actions {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .home-topbar-producto .home-header-button {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+
+    .producto-view-header-chips {
+        gap: 6px;
+        padding: 4px 10px 9px;
+    }
+
+    .producto-view-chip-vista {
+        min-height: 32px;
+        padding: 7px 13px;
+        font-size: 11px;
+    }
+
+    .producto-view-chip-sku {
+        min-height: 29px;
+        padding: 5px 9px;
+        font-size: 9px;
+        letter-spacing: .2px;
+    }
+
+    .producto-view-main {
+        gap: 14px;
+        padding: 8px 16px 22px;
+    }
+
+    .producto-view-shirt-wrap {
+        width: 100%;
+    }
+
+    .producto-view-customize {
+        min-height: 50px;
+    }
+}
+
+
+/* =========================================================
+   16. MONITORES GRANDES
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .producto-view-panel {
+        width: min(560px, 36vw);
+    }
+
+    #catalogHome.producto-view-open {
+        width: calc(100% - min(560px, 36vw));
+        max-width: none;
+    }
+
+    .producto-view-header {
+        width: 100%;
+    }
+
+    .home-topbar-producto {
+        height: 76px;
+        padding: 10px 20px 0;
+    }
+
+    .home-topbar-producto .home-logo-image {
+        max-width: 170px;
+        max-height: 54px;
+    }
+
+    .home-topbar-producto .home-header-button {
+        width: 42px;
+        height: 42px;
+        flex-basis: 42px;
+    }
+
+    .producto-view-header-chips {
+        padding: 5px 20px 12px;
+    }
+
+    .producto-view-shirt-wrap {
+        max-width: 490px;
+    }
+
+    .producto-view-main {
+        gap: 30px;
+        padding: 22px 30px 36px;
+    }
+
+    .producto-view-customize {
+        width: min(100%, 360px);
+
+        min-height: 58px;
+        margin-top: 12px;
+
+        font-size: 17px;
+    }
+
+    .producto-view-chip {
+        min-height: 35px;
+        padding: 7px 15px;
+        font-size: 13px;
+    }
+
+    .producto-view-chip-vista {
+        min-height: 37px;
+        padding: 8px 17px;
+        font-size: 13px;
+    }
+
+    .producto-view-chip-sku {
+        min-height: 35px;
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   17. ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .producto-view-panel,
+    .producto-view-overlay,
+    #catalogHome,
+    .producto-view-chip,
+    .producto-view-chip-vista,
+    .producto-view-chip-sku,
+    .producto-view-customize,
+    .home-topbar-producto .home-header-button,
+    .home-topbar-producto .home-logo-image {
+        transition: none;
+        will-change: auto;
+    }
+}
+
+/* Todo el visor comparte el fondo cambiante de Detalles. */
+.producto-view-panel {
+    background-color:#f9c4e1;
+    animation:productoViewVisualColorCycle 6s ease-in-out infinite;
+}
+.producto-view-main {
+    position:relative;
+    isolation:isolate;
+}
+.producto-view-main::before {
+    content:"";
+    position:absolute;
+    z-index:0;
+    width:82%;
+    aspect-ratio:1;
+    left:9%;
+    top:9%;
+    border-radius:48% 52% 42% 58% / 38% 50% 50% 62%;
+    clip-path:polygon(10% 0,90% 0,100% 10%,94% 20%,82% 30%,68% 40%,57% 47%,54% 50%,57% 53%,68% 60%,82% 70%,94% 80%,100% 90%,90% 100%,10% 100%,0 90%,6% 80%,18% 70%,32% 60%,43% 53%,46% 50%,43% 47%,32% 40%,18% 30%,6% 20%,0 10%);
+    background-color:#f2a8d0;
+    animation:productoViewShapeColorCycle 6s ease-in-out infinite;
+    transform:rotate(-5deg);
+}
+.producto-view-shirt-wrap,
+.producto-view-customize { position:relative; z-index:1; }
+.producto-view-chip-contexto {
+    min-width:88px;
+    color:#1a2b57;
+    font-weight:800;
+    text-align:center;
+}
+.producto-view-chip-contexto--sku { font-size:clamp(17px, 2.2vw, 23px); }
+.producto-view-customize {
+    border-color:#8067a6;
+    background:#8067a6;
+    color:#fff;
+    box-shadow:0 8px 24px rgba(112,91,148,.24);
+}
+.producto-view-customize:hover {
+    border-color:#705b94;
+    background:#705b94;
+    color:#fff;
+    box-shadow:0 12px 28px rgba(112,91,148,.3);
+}
+.producto-view-customize:active { background:#624c84; }
+.producto-view.is-commerce .producto-view-panel { background:#fff; animation:none; }
+.producto-view.is-commerce .producto-view-main::before { display:none; }
+@keyframes productoViewVisualColorCycle {
+    0%,100% { background-color:#f9c4e1; }
+    33.333% { background-color:#d9c8ff; }
+    66.667% { background-color:#bdeaff; }
+}
+@keyframes productoViewShapeColorCycle {
+    0%,100% { background-color:#f2a8d0; }
+    33.333% { background-color:#b99be6; }
+    66.667% { background-color:#87cbea; }
+}
+@media (prefers-reduced-motion:reduce) {
+    .producto-view-panel,
+    .producto-view-main::before { animation:none; }
+}
+
+/* =========================================================
+   18. VISOR ADAPTABLE — MÓVIL, TABLET Y ESCRITORIO
+========================================================= */
+
+/* MÓVIL Y TABLET */
+@media (max-width: 1024px) {
+
+  
+
+    /* El encabezado hereda el fondo blanco */
+    .producto-view-header,
+    .producto-view-header-shared,
+    .home-topbar-producto {
+        background: #ffffff;
+    }
+
+}
+@media (max-width: 1024px) {
+
+    /* El contenedor general no debe forzar el fondo blanco */
+    .producto-view-header {
+        background: transparent;
+    }
+
+    /* Solo la barra de navegación es blanca */
+    .producto-view-header-shared,
+    .home-topbar-producto {
+        background: #ffffff;
+    }
+
+    /* Los chips quedan visualmente sobre el fondo dinámico */
+    .producto-view-header-chips {
+        background: transparent;
+    }
+
+}
+
+/* LAPTOP Y ESCRITORIO */
+@media (min-width: 1025px) {
+
+    /* Encabezado sin barra visual */
+    .home-topbar-producto {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        height: 48px;
+        padding: 8px 16px 0;
+
+        background: transparent;
+    }
+
+    /* Ocultar el logo en el encabezado de escritorio */
+    .home-topbar-producto .home-logo-image {
+        display: none;
+    }
+
+    /* Colocar las acciones en la esquina superior derecha */
+    .home-topbar-producto .home-header-actions {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        left: auto;
+
+        display: flex;
+        justify-content: flex-end;
+
+        width: auto;
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Ocultar las acciones que no corresponden al visor */
+    .home-topbar-producto .home-header-button {
+        display: none;
+    }
+
+    /* Mantener visible únicamente el botón de salida */
+    .home-topbar-producto [data-producto-close] {
+        display: flex;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .home-topbar,
+    .home-topbar-producto {
+        height:64px;
+        min-height:64px;
+        padding-top:8px;
+        align-items:center;
+    }
+    .home-topbar .home-logo-image,
+    .home-topbar.scrolled .home-logo-image,
+    .home-topbar-producto .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        max-width:min(180px, 42vw);
+        max-height:44px;
+        margin:0;
+        transform:translate(-50%,-50%);
+    }
+    .home-topbar .home-header-actions,
+    .home-topbar-producto .home-header-actions,
+    .home-topbar.scrolled .home-header-actions {
+        position:absolute;
+        top:50%;
+        left:0;
+        right:0;
+        justify-content:space-between;
+        width:100%;
+        padding:0 5%;
+        box-sizing:border-box;
+        transform:translateY(-50%);
+        pointer-events:none;
+    }
+    .home-topbar .home-header-button,
+    .home-topbar-producto .home-header-button {
+        width:36px;
+        height:36px;
+        flex-basis:36px;
+        pointer-events:auto;
+    }
+}
+
+/* En el home, el logo comienza a la izquierda y la lupa aparece al desplazarse. */
+.home-topbar:not(.scrolled):not(.home-topbar-producto) .home-header-button:first-child {
+    display:none;
+}
+.home-topbar.scrolled:not(.home-topbar-producto) .home-header-button:first-child {
+    display:flex;
+}
+@media (max-width:1024px) {
+    .home-topbar:not(.home-topbar-producto) .home-logo-image {
+        position:relative;
+        top:auto;
+        left:auto;
+        margin:0;
+        transform:none;
+    }
+    .home-topbar.scrolled:not(.home-topbar-producto) .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+}
+
+@media (max-width:1024px) {
+    .home-topbar.details-open:not(.home-topbar-producto) .home-header-actions {
+        justify-content:space-between;
+    }
+    .home-topbar.details-open:not(.home-topbar-producto) .home-header-button:first-child {
+        display:flex;
+    }
+    .home-topbar.details-open:not(.home-topbar-producto) .home-logo-image {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+}

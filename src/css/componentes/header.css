@@ -1,0 +1,270 @@
+/* =========================================================
+   VISIÓN CREATIVA — HEADER
+========================================================= */
+
+.home-topbar{
+  width:100%;
+  box-sizing:border-box;
+
+  height:110px;
+  padding:28px 7% 0;
+
+  position:sticky;
+  top:0;
+
+  z-index:100;
+
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+
+  background:transparent;
+
+  transition:
+    background-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.home-topbar.scrolled{
+  background:#fff;
+
+  box-shadow:
+    0 4px 18px rgba(0,0,0,.06);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.home-logo-image{
+  display:block;
+
+  width:auto;
+  height:auto;
+
+  max-width:min(210px,42vw);
+  max-height:62px;
+
+  margin-left:25px;
+
+  transition:
+    left .25s ease,
+    transform .25s ease;
+}
+
+/* =========================================================
+   ACCIONES
+========================================================= */
+
+.home-header-actions{
+  display:flex;
+
+  align-items:center;
+
+  gap:14px;
+
+  padding-top:3px;
+}
+
+.home-header-button{
+  width:42px;
+  height:42px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:0;
+
+  border:0;
+
+  background:transparent;
+
+  cursor:pointer;
+
+  border-radius:50%;
+
+  color:#111;
+
+  transition:
+    background-color .2s ease,
+    transform .2s ease;
+}
+
+.home-header-button:hover{
+  background:rgba(0,0,0,.06);
+
+  transform:scale(1.05);
+}
+
+.home-header-icon{
+  width:22px;
+  height:22px;
+
+  display:block;
+}
+
+/* =========================================================
+   LAPTOP / ESCRITORIO
+========================================================= */
+
+@media (min-width:801px){
+
+  .home-topbar{
+    width:100%;
+
+    height:90px;
+
+    padding:18px 7% 0;
+  }
+
+  .home-logo-image{
+    max-width:230px;
+    max-height:68px;
+
+    margin-left:35px;
+  }
+
+  .home-header-actions{
+    gap:16px;
+  }
+
+  .home-header-button{
+    width:44px;
+    height:44px;
+  }
+}
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width:800px){
+
+  .home-topbar{
+    width:100%;
+
+    height:78px;
+
+    padding:16px 6% 0;
+
+    position:sticky;
+  }
+
+  .home-logo-image{
+    max-width:180px;
+    max-height:56px;
+
+    margin-left:15px;
+
+    position:relative;
+    left:0;
+
+    transform:translateX(0);
+  }
+
+  .home-header-actions{
+    gap:5px;
+  }
+
+  .home-header-button{
+    width:38px;
+    height:38px;
+  }
+
+  .home-topbar.scrolled{
+    position:sticky;
+  }
+
+  /* -----------------------------------------
+     LOGO CENTRADO AL HACER SCROLL
+  ----------------------------------------- */
+
+  .home-topbar.scrolled .home-logo-image{
+    position:absolute;
+
+    left:50%;
+
+    margin-left:0;
+
+    transform:translateX(-50%);
+  }
+
+  /* -----------------------------------------
+     ICONOS A LOS EXTREMOS
+  ----------------------------------------- */
+
+  .home-topbar.scrolled .home-header-actions{
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    top:16px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:0 6%;
+
+    box-sizing:border-box;
+
+    pointer-events:none;
+  }
+
+  .home-topbar.scrolled .home-header-button{
+    pointer-events:auto;
+  }
+
+  .home-topbar.scrolled
+  .home-header-button:first-child{
+    order:1;
+  }
+
+  .home-topbar.scrolled
+  .home-header-button:last-child{
+    order:2;
+  }
+}
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+========================================================= */
+
+@media (max-width:520px){
+
+  .home-topbar{
+    width:100%;
+
+    height:78px;
+
+    padding:16px 5% 0;
+  }
+
+  .home-logo-image{
+    max-width:165px;
+    max-height:52px;
+
+    margin-left:10px;
+  }
+
+  .home-header-actions{
+    gap:2px;
+  }
+
+  .home-header-button{
+    width:38px;
+    height:38px;
+  }
+
+  .home-topbar.scrolled .home-header-actions{
+    top:16px;
+
+    padding-left:5%;
+    padding-right:5%;
+  }
+}

@@ -1,0 +1,71 @@
+/* =========================================================
+   VISIÓN CREATIVA — TEMA DEFAULT
+========================================================= */
+
+html,
+body{
+  background:#fff;
+}
+
+/* =========================================================
+   SUPERFICIE
+========================================================= */
+
+.catalog-home{
+  background:
+    radial-gradient(
+      circle at 8% 14%,
+      rgba(207,234,255,.78) 0 72px,
+      transparent 74px
+    ),
+    radial-gradient(
+      circle at 94% 17%,
+      rgba(255,215,239,.76) 0 104px,
+      transparent 106px
+    ),
+    radial-gradient(
+      circle at 5% 48%,
+      rgba(207,234,255,.72) 0 82px,
+      transparent 84px
+    ),
+    radial-gradient(
+      circle at 96% 55%,
+      rgba(229,220,255,.78) 0 90px,
+      transparent 92px
+    ),
+    radial-gradient(
+      circle at 8% 86%,
+      rgba(255,223,240,.72) 0 104px,
+      transparent 106px
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(215,240,255,.76) 0 88px,
+      transparent 90px
+    ),
+    #fff;
+}
+
+.home-app{
+  background:transparent;
+}
+
+/* =========================================================
+   PUNTOS
+========================================================= */
+
+.home-dots{
+  opacity:.5;
+}
+
+.home-dots span{
+  background:#a6d9fb;
+}
+
+/* =========================================================
+   DECORACIONES
+========================================================= */
+
+.home-pill-decor{
+  background:rgba(221,236,255,.6);
+}

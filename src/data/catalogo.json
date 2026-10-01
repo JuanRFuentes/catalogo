@@ -1,0 +1,284 @@
+{
+  "version": 4,
+  "folioSiguiente": 19,
+  "generado": "2026-10-01T09:55:02.422Z",
+  "categorias": [
+    {
+      "nombre": "carros",
+      "carpeta": "carros",
+      "prefijo": "CAR",
+      "productos": [
+        {
+          "numero": "0015",
+          "sku": "CAR0015",
+          "imagenes": [
+            {
+              "archivo": "0015-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0252,
+              "porcentajeColorido": 0.529
+            }
+          ]
+        },
+        {
+          "numero": "0016",
+          "sku": "CAR0016",
+          "imagenes": [
+            {
+              "archivo": "0016-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0254,
+              "porcentajeColorido": 0.5395
+            }
+          ]
+        },
+        {
+          "numero": "0017",
+          "sku": "CAR0017",
+          "imagenes": [
+            {
+              "archivo": "0017-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0541,
+              "porcentajeColorido": 0.6676
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "judas",
+      "carpeta": "judas",
+      "prefijo": "JUD",
+      "productos": [
+        {
+          "numero": "011",
+          "sku": "JUD011",
+          "imagenes": [
+            {
+              "archivo": "011-T-B.png",
+              "vista": "back",
+              "posicion": "top",
+              "vistaCodigo": "B",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0802,
+              "porcentajeColorido": 0.6141
+            }
+          ]
+        },
+        {
+          "numero": "0014",
+          "sku": "JUD0014",
+          "imagenes": [
+            {
+              "archivo": "0014-C-B.png",
+              "vista": "back",
+              "posicion": "top",
+              "vistaCodigo": "B",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0813,
+              "porcentajeColorido": 0.5966
+            }
+          ]
+        },
+        {
+          "numero": "0018",
+          "sku": "ECJS0018",
+          "imagenes": [
+            {
+              "archivo": "sjudassearch.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1337,
+              "porcentajeColorido": 0.606
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Maestros",
+      "carpeta": "Maestros",
+      "prefijo": "MAE",
+      "productos": [
+        {
+          "numero": "006",
+          "sku": "MAE006",
+          "imagenes": [
+            {
+              "archivo": "006-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0069,
+              "porcentajeColorido": 0.6618
+            },
+            {
+              "archivo": "006-T-B.png",
+              "vista": "back",
+              "posicion": "top",
+              "vistaCodigo": "B",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0393,
+              "porcentajeColorido": 0.6609
+            }
+          ]
+        },
+        {
+          "numero": "007",
+          "sku": "MAE007",
+          "imagenes": [
+            {
+              "archivo": "007-T-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0393,
+              "porcentajeColorido": 0.6609
+            }
+          ]
+        },
+        {
+          "numero": "009",
+          "sku": "MAE009",
+          "imagenes": [
+            {
+              "archivo": "009-T-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1813,
+              "porcentajeColorido": 0.8129
+            }
+          ]
+        },
+        {
+          "numero": "010",
+          "sku": "MAE010",
+          "imagenes": [
+            {
+              "archivo": "010-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.4024,
+              "porcentajeColorido": 0.5841
+            }
+          ]
+        },
+        {
+          "numero": "011",
+          "sku": "MAE011",
+          "imagenes": [
+            {
+              "archivo": "011-T-B.png",
+              "vista": "back",
+              "posicion": "top",
+              "vistaCodigo": "B",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0802,
+              "porcentajeColorido": 0.6141
+            }
+          ]
+        },
+        {
+          "numero": "0012",
+          "sku": "MAE0012",
+          "imagenes": [
+            {
+              "archivo": "0012-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0075,
+              "porcentajeColorido": 0.223
+            }
+          ]
+        },
+        {
+          "numero": "0013",
+          "sku": "MAE0013",
+          "imagenes": [
+            {
+              "archivo": "0013-C-F.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0004,
+              "porcentajeColorido": 0.3674
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Navidad",
+      "carpeta": "Navidad",
+      "prefijo": "NAV",
+      "productos": [
+        {
+          "numero": "001",
+          "sku": "NAV001",
+          "imagenes": [
+            {
+              "archivo": "001-t-f.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

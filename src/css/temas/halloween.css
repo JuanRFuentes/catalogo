@@ -1,0 +1,488 @@
+/* Tema de temporada: conserva las medidas del sitio y cambia su paleta. */
+:root[data-theme="halloween"] {
+    color-scheme: dark;
+    --halloween-orange: #f97316;
+    --halloween-orange-light: #ff9a3c;
+    --halloween-purple: #8065a8;
+    --halloween-gray: #77727e;
+    --halloween-gray-light: #c5c1c9;
+    --halloween-black: #17151b;
+    --halloween-surface: #211e25;
+    --halloween-surface-raised: #2b2730;
+    --halloween-text: #f7f3f8;
+    --halloween-muted: #c4bdca;
+}
+
+html[data-theme="halloween"],
+html[data-theme="halloween"] body {
+    background: var(--halloween-black);
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .catalog-home {
+    color: var(--halloween-text);
+    background:
+        radial-gradient(circle at 5% 14%, rgba(249,115,22,.25) 0 72px, transparent 74px),
+        radial-gradient(circle at 94% 18%, rgba(128,101,168,.3) 0 104px, transparent 106px),
+        radial-gradient(circle at 7% 49%, rgba(119,114,126,.23) 0 82px, transparent 84px),
+        radial-gradient(circle at 96% 58%, rgba(249,115,22,.17) 0 90px, transparent 92px),
+        radial-gradient(circle at 9% 87%, rgba(128,101,168,.23) 0 104px, transparent 106px),
+        radial-gradient(circle at 92% 88%, rgba(119,114,126,.2) 0 88px, transparent 90px),
+        var(--halloween-black);
+}
+
+html[data-theme="halloween"] .home-topbar.scrolled,
+html[data-theme="halloween"] .home-topbar-producto {
+    background: rgba(30, 27, 34, .96);
+    box-shadow: 0 4px 20px rgba(0,0,0,.28);
+}
+
+html[data-theme="halloween"] .home-header-button {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .home-header-button:hover {
+    background: rgba(249,115,22,.18);
+}
+
+html[data-theme="halloween"] .home-topbar.search-active .home-search {
+    background: #2b2730;
+    border: 1px solid #51465e;
+    box-shadow: 0 4px 18px rgba(0,0,0,.24);
+}
+
+html[data-theme="halloween"] .home-search input,
+html[data-theme="halloween"] #homeSearchInput {
+    background: transparent;
+    color: #fff;
+    caret-color: var(--halloween-orange-light);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+html[data-theme="halloween"] .home-topbar.search-active #headerSearchButton {
+    background: #8065a8;
+    color: #fff;
+}
+
+html[data-theme="halloween"] .home-hero-copy,
+html[data-theme="halloween"] .home-kicker,
+html[data-theme="halloween"] .home-headline,
+html[data-theme="halloween"] .home-rec-title,
+html[data-theme="halloween"] .home-category-title {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .home-headline .blue,
+html[data-theme="halloween"] .home-star,
+html[data-theme="halloween"] .home-price {
+    color: var(--halloween-orange-light);
+}
+
+html[data-theme="halloween"] .home-brush::before {
+    background: var(--halloween-orange);
+}
+
+html[data-theme="halloween"] .home-sub,
+html[data-theme="halloween"] .home-rec-sub,
+html[data-theme="halloween"] .home-category-sub {
+    color: var(--halloween-muted);
+}
+
+html[data-theme="halloween"] .home-hero-pink {
+    background: linear-gradient(145deg, #f97316 0%, #a65325 48%, #70578f 100%);
+    box-shadow: 0 18px 38px rgba(249,115,22,.18), inset 0 0 0 1px rgba(255,255,255,.24);
+}
+
+html[data-theme="halloween"] .home-dots span {
+    background: var(--halloween-orange-light);
+}
+
+html[data-theme="halloween"] .home-pill-decor {
+    background: rgba(128,101,168,.3);
+}
+
+html[data-theme="halloween"] .home-cat {
+    background: rgba(43,39,48,.94);
+    color: var(--halloween-gray-light);
+    box-shadow: 0 8px 22px rgba(0,0,0,.2);
+}
+
+html[data-theme="halloween"] .home-cat.active,
+html[data-theme="halloween"] .home-cat:not(.active):hover,
+html[data-theme="halloween"] .home-cat:not(.active):focus-visible {
+    background: linear-gradient(100deg, var(--halloween-orange), #dc5c13);
+    color: #fff;
+}
+
+html[data-theme="halloween"] .home-see {
+    background: #382d45;
+    color: #e6d9f5;
+}
+
+html[data-theme="halloween"] .home-see:hover {
+    background: #4a385d;
+}
+
+html[data-theme="halloween"] .home-rec-title,
+html[data-theme="halloween"] .home-category-title,
+html[data-theme="halloween"] .home-name {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .home-card {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .home-rec-card:nth-child(3n+1) .home-rec-photo {
+    background: #f97316;
+}
+
+html[data-theme="halloween"] .home-rec-card:nth-child(3n+2) .home-rec-photo {
+    background: #77727e;
+}
+
+html[data-theme="halloween"] .home-rec-card:nth-child(3n) .home-rec-photo {
+    background: #211e25;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.14), 0 8px 22px rgba(0,0,0,.28);
+}
+
+html[data-theme="halloween"] .home-collection-card .home-photo {
+    box-shadow: 0 8px 22px rgba(0,0,0,.25);
+}
+
+html[data-theme="halloween"] .home-mini-shirt.shirt-naranja {
+    --shirt-tint: #f97316;
+}
+
+html[data-theme="halloween"] .home-mini-shirt.shirt-negro {
+    --shirt-tint: #211e25;
+}
+
+html[data-theme="halloween"] .home-mini-shirt.shirt-blanco {
+    --shirt-tint: transparent;
+}
+
+html[data-theme="halloween"] .home-search input,
+html[data-theme="halloween"] #homeSearchInput {
+    border-color: #51465e;
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] #homeSearchInput::placeholder {
+    color: #b7adbf;
+}
+
+html[data-theme="halloween"] .home-search-empty {
+    border-color: #51465e;
+    background: linear-gradient(145deg, #211e25, #292331);
+    box-shadow: 0 16px 42px rgba(0,0,0,.28);
+}
+
+html[data-theme="halloween"] .home-search-empty-copy h2 {
+    color: #fff;
+}
+
+html[data-theme="halloween"] .home-search-empty-copy p {
+    color: #c5b3df;
+}
+
+html[data-theme="halloween"] .home-search-empty::before {
+    background: linear-gradient(140deg, rgba(249,115,22,.2), rgba(128,101,168,.22) 60%, rgba(119,114,126,.2));
+}
+
+html[data-theme="halloween"] .home-search-empty::after {
+    background-image: radial-gradient(#ff9a3c 2px, transparent 2.5px);
+}
+
+html[data-theme="halloween"] .home-product-details {
+    --details-fuchsia: #f97316;
+    --details-cyan: #b69bd7;
+    --details-navy: #30263b;
+    --details-white: #f7f3f8;
+    --details-bg: #211e25;
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .details-visual {
+    background-color: #f97316;
+}
+
+html[data-theme="halloween"] .details-image-background {
+    background-color: #8065a8;
+}
+
+@keyframes detailsVisualColorCycle {
+    0%, 22% { background-color: #f97316; }
+    33%, 55% { background-color: #8065a8; }
+    66%, 88% { background-color: #77727e; }
+    100% { background-color: #f97316; }
+}
+
+@keyframes detailsCircleColorCycle {
+    0%, 22% { background-color: #ff9a3c; }
+    33%, 55% { background-color: #a58ac8; }
+    66%, 88% { background-color: #a29da7; }
+    100% { background-color: #ff9a3c; }
+}
+
+html[data-theme="halloween"] .details-info,
+html[data-theme="halloween"] .details-inner {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .details-close,
+html[data-theme="halloween"] .details-size,
+html[data-theme="halloween"] .details-color-browser {
+    background-color: var(--halloween-surface-raised);
+    border-color: #51465e;
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .details-category,
+html[data-theme="halloween"] .details-size.active,
+html[data-theme="halloween"] .details-add-cart {
+    background: var(--halloween-orange);
+    border-color: var(--halloween-orange);
+    color: #fff;
+}
+
+html[data-theme="halloween"] .details-image-label {
+    background: rgba(33,30,37,.84);
+    border-color: rgba(197,193,201,.55);
+    color: #f7f3f8;
+}
+
+html[data-theme="halloween"] .details-size {
+    background: #2b2730;
+    border-color: #51465e;
+    color: #f7f3f8;
+}
+
+html[data-theme="halloween"] .details-size.active {
+    background: #f97316;
+    border-color: #f97316;
+    color: #fff;
+}
+
+html[data-theme="halloween"] .details-size:disabled {
+    background: #26232a;
+    border-color: #39343f;
+    color: #79737f;
+}
+
+html[data-theme="halloween"] .details-product-heading,
+html[data-theme="halloween"] .details-option-title,
+html[data-theme="halloween"] .details-sku,
+html[data-theme="halloween"] .details-description,
+html[data-theme="halloween"] .details-note {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .details-product-heading h2,
+html[data-theme="halloween"] .details-product-summary h2,
+html[data-theme="halloween"] .details-color-selection,
+html[data-theme="halloween"] #detailsColorSelectedName,
+html[data-theme="halloween"] .details-quantity-value {
+    color: #f7f3f8;
+}
+
+html[data-theme="halloween"] .details-gender:not(.active):not([aria-pressed="true"]) {
+    background: #f7f3f8;
+    border-color: #d8cde3;
+    color: #30263b;
+}
+
+html[data-theme="halloween"] .details-gender.active,
+html[data-theme="halloween"] .details-gender[aria-pressed="true"] {
+    background: var(--halloween-orange);
+    border-color: var(--halloween-orange);
+    color: #fff;
+}
+
+html[data-theme="halloween"] .details-product-summary .details-price {
+    color: var(--halloween-orange-light);
+}
+
+html[data-theme="halloween"] .details-quantity {
+    background: #30263b;
+    border-color: #8065a8;
+}
+
+html[data-theme="halloween"] .details-quantity-button,
+html[data-theme="halloween"] .details-quantity-button:hover {
+    background: #49395d;
+    color: #fff;
+}
+
+html[data-theme="halloween"] .details-view-arrow,
+html[data-theme="halloween"] .producto-view-gallery-controls button,
+html[data-theme="halloween"] .commerce-drawer-close {
+    background: #30263b;
+    border-color: #8065a8;
+    color: #f7f3f8;
+}
+
+html[data-theme="halloween"] .details-feedback-toast {
+    background: #30263b;
+    border-color: #8065a8;
+    border-left-color: var(--halloween-orange);
+}
+
+html[data-theme="halloween"] .producto-view-panel {
+    --producto-fondo: #211e25;
+    --vc-cian: #b69bd7;
+    --vc-fucsia: #f97316;
+    --vc-marino: #211e25;
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .producto-view.is-commerce .producto-view-panel {
+    background: var(--halloween-surface);
+    animation: none;
+}
+
+html[data-theme="halloween"] .producto-view-main::before {
+    background-color: #8065a8;
+}
+
+html[data-theme="halloween"] .producto-view-chip-contexto,
+html[data-theme="halloween"] .producto-view-content,
+html[data-theme="halloween"] .commerce-drawer-header h2 {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .producto-view-chip,
+html[data-theme="halloween"] .producto-view-gallery-controls button {
+    background: #30263b;
+    border-color: #8065a8;
+    color: #f7f3f8;
+}
+
+html[data-theme="halloween"] .producto-view-customize {
+    border-color: #8065a8;
+    background: #8065a8;
+}
+
+html[data-theme="halloween"] .producto-view-customize:hover {
+    border-color: #70558f;
+    background: #70558f;
+}
+
+html[data-theme="halloween"] .producto-view-panel,
+html[data-theme="halloween"] .commerce-item,
+html[data-theme="halloween"] .commerce-drawer-content {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .commerce-item--rosa {
+    background: #f97316;
+    border-color: #ff9a3c;
+}
+
+html[data-theme="halloween"] .header-cart-badge {
+    background: var(--halloween-orange);
+    border-color: var(--halloween-black);
+    color: #fff;
+}
+
+html[data-theme="halloween"] .commerce-item--azul {
+    background: #705b91;
+    border-color: #8e77b0;
+}
+
+html[data-theme="halloween"] .commerce-item--gris {
+    background: #5f5d64;
+    border-color: #77747c;
+}
+
+html[data-theme="halloween"] .commerce-item-title,
+html[data-theme="halloween"] .commerce-item-meta,
+html[data-theme="halloween"] .commerce-quote-summary {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .commerce-item-price,
+html[data-theme="halloween"] .commerce-quote-summary strong {
+    color: #d0b9ed;
+}
+
+html[data-theme="halloween"] .commerce-quantity button {
+    background: #30263b;
+    color: #fff;
+}
+
+html[data-theme="halloween"] .commerce-quantity output {
+    color: #fff;
+}
+
+html[data-theme="halloween"] .commerce-order-button {
+    background: var(--halloween-orange);
+    box-shadow: 0 8px 20px rgba(249,115,22,.22);
+}
+
+html[data-theme="halloween"] .commerce-order-button:hover:not(:disabled) {
+    background: #dc5c13;
+}
+
+@keyframes productoViewVisualColorCycle {
+    0%,100% { background-color: #f97316; }
+    33.333% { background-color: #705b91; }
+    66.667% { background-color: #5f5d64; }
+}
+
+@keyframes productoViewShapeColorCycle {
+    0%,100% { background-color: #ff9a3c; }
+    33.333% { background-color: #8065a8; }
+    66.667% { background-color: #77727e; }
+}
+
+html[data-theme="halloween"] .home-rec-arrow,
+html[data-theme="halloween"] .home-rec-arrow:hover {
+    background: #30263b;
+    border-color: #8065a8;
+    color: #fff;
+}
+
+/* Halloween: botones del encabezado sin discos blancos en móvil y tablet. */
+html[data-theme="halloween"] .home-topbar .home-header-button,
+html[data-theme="halloween"] .home-topbar-producto .home-header-button,
+html[data-theme="halloween"] .home-topbar [data-producto-close] {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--halloween-text) !important;
+}
+
+html[data-theme="halloween"] .home-topbar .home-header-button:hover,
+html[data-theme="halloween"] .home-topbar-producto .home-header-button:hover,
+html[data-theme="halloween"] .home-topbar [data-producto-close]:hover {
+    background: rgba(249, 115, 22, .2) !important;
+}
+
+html[data-theme="halloween"] .home-topbar .home-header-icon,
+html[data-theme="halloween"] .home-topbar-producto .home-header-icon {
+    color: var(--halloween-text);
+}
+
+html[data-theme="halloween"] .home-header-button .header-cart-badge {
+    background: var(--halloween-orange) !important;
+    color: #fff !important;
+}
+
+/* Mantén oscuro el campo y su contenedor al abrir búsqueda en móvil/tablet. */
+html[data-theme="halloween"] .home-topbar.search-active,
+html[data-theme="halloween"] .home-topbar.search-active .home-search {
+    background: #2b2730 !important;
+    color: var(--halloween-text) !important;
+}
+
+html[data-theme="halloween"] .home-topbar.search-active .home-search {
+    border-color: #51465e !important;
+}
+
+html[data-theme="halloween"] .home-topbar.search-active .home-search input,
+html[data-theme="halloween"] .home-topbar.search-active #homeSearchInput {
+    background: transparent !important;
+    color: var(--halloween-text) !important;
+}

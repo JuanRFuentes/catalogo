@@ -1,0 +1,108 @@
+/* =========================================================
+   VISIÓN CREATIVA — SUPERFICIE / GEOMETRÍA
+========================================================= */
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+  margin:0;
+}
+
+body{
+  min-height:100vh;
+}
+
+/* =========================================================
+   SUPERFICIE COMPLETA DEL CATÁLOGO
+========================================================= */
+
+.catalog-home{
+  position:fixed;
+  inset:0;
+  z-index:5000;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL CENTRADO
+========================================================= */
+
+.home-app{
+  position:relative;
+  width:min(100%,1100px);
+  max-width:1100px;
+  min-height:100%;
+  margin:0 auto;
+  overflow:visible;
+}
+
+/* =========================================================
+   PUNTOS DECORATIVOS
+========================================================= */
+
+.home-dots{
+  position:absolute;
+  width:65px;
+  height:95px;
+  display:grid;
+  grid-template-columns:repeat(3,8px);
+  grid-auto-rows:8px;
+  gap:13px;
+  pointer-events:none;
+  z-index:0;
+}
+
+.home-dots span{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+
+/* Posiciones */
+
+.home-dots.d1{
+  left:8px;
+  top:290px;
+}
+
+.home-dots.d2{
+  right:8px;
+  top:290px;
+}
+
+.home-dots.d3{
+  left:9px;
+  top:760px;
+}
+
+.home-dots.d4{
+  right:8px;
+  top:770px;
+}
+
+/* =========================================================
+   DECORACIONES TIPO PÍLDORA / CÍRCULO
+========================================================= */
+
+.home-pill-decor{
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:0;
+}
+
+.home-pill-a{
+  width:180px;
+  height:180px;
+  left:-95px;
+  top:420px;
+}
+
+.home-pill-b{
+  width:180px;
+  height:180px;
+  right:-100px;
+  top:930px;
+}

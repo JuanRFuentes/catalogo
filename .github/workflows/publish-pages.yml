@@ -1,0 +1,75 @@
+name: Scan catalog and publish site
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'diseños/**'
+      - 'hero/**'
+      - 'src/**'
+      - 'scripts/scan-designs.js'
+      - 'scripts/build.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/publish-pages.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: catalog-scan-and-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scan design folders
+        run: npm run scan
+
+      - name: Persist stable SKUs and folios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/catalogo.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update generated design catalog"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Build static site into dist
+        run: npm run build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dist
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,136 @@
+{
+  "marca": {
+    "nombre": "Visión Creativa",
+    "logo": "hero/logo.png"
+  },
+
+  "home": {
+    "tema": "sanjudas",
+
+    "hero": {
+      "kicker": "NUEVOS LANZAMIENTOS",
+      "titulo": "ELEVA",
+      "tituloAcento": "TU ESTILO",
+      "frase": "CADA DÍA",
+      "descripcion": "Explora lo último en moda y estilo de vida",
+      "imagen": "hero/personaje.png",
+      "imagenAlt": "Modelo Visión Creativa"
+    },
+
+    "recomendaciones": {
+      "titulo": "Recomendaciones del mes",
+      "categoria": "maestros",
+
+      "contrasteBlanco": [
+        "MAE009",
+        "MAE010"
+      ]
+    }
+  },
+
+  "colores": {
+    "azul": "#1976d2",
+    "azulClaro": "#8ec9f3",
+    "azulSuave": "#dff1ff",
+
+    "rosa": "#e95f83",
+    "rosaClaro": "#f7d7df",
+    "rosaSuave": "#fdecef",
+
+    "texto": "#111111",
+    "blanco": "#ffffff",
+    "borde": "#eadcdf"
+  },
+
+  "temas": {
+    "default": {
+
+      "playeras": {
+        "colorEnPortada": false,
+        "normal": [
+          "blanco"
+        ],
+        "estampadoClaro": [
+          "rosa",
+          "azul"
+        ]
+      },
+
+      "colecciones": {
+        "fondos": [
+          "#f8c5df",
+          "#d9edff",
+          "#e2e5e9"
+        ]
+      },
+
+      "producto": {
+        "fondos": [
+          "#fdecef",
+          "#dff1ff",
+          "#eee5ff"
+        ],
+        "intervaloFondoMs": 4000
+      }
+
+    },
+
+    "halloween": {
+      "logo": "hero/Logo Hw.png",
+      "playeras": {
+        "colorEnPortada": true,
+        "normal": ["blanco", "naranja", "negro"],
+        "estampadoClaro": ["blanco", "naranja", "negro"],
+        "porFondo": {
+          "rosa": ["blanco", "negro"],
+          "azul": ["naranja", "negro"],
+          "gris": ["blanco", "naranja"],
+          "#f97316": ["blanco", "negro"],
+          "#77727e": ["naranja", "negro"],
+          "#211e25": ["blanco", "naranja"]
+        }
+      },
+      "tarjetas": {
+        "fondos": ["rosa", "azul", "gris"]
+      },
+      "colecciones": {
+        "fondos": ["#f97316", "#77727e", "#211e25"]
+      },
+      "producto": {
+        "fondos": ["#f97316", "#705b91", "#5f5d64"],
+        "intervaloFondoMs": 4000
+      },
+      "busqueda": {
+        "imagenSinResultados": "hero/playeras/hwsearch.png"
+      }
+    },
+    "sanjudas": {
+      "logo": "hero/logosjudas.png",
+      "busqueda": {
+        "imagenSinResultados": "hero/playeras/sjudassearch.png"
+      },
+      "playeras": {
+        "colorEnPortada": true,
+        "normal": ["verde", "blanco", "negro"],
+        "estampadoClaro": ["verde", "blanco", "negro"],
+        "porFondo": {
+          "#e7c76a": ["verde", "blanco"],
+          "#d4a62a": ["verde", "blanco"],
+          "#496b3a": ["blanco", "mostaza"],
+          "#d9dfc4": ["verde", "negro"],
+          "#f5ecd5": ["verde", "negro"]
+        }
+      },
+      "tarjetas": {
+        "fondos": ["#e7c76a", "#496b3a", "#d9dfc4"]
+      },
+      "colecciones": {
+        "fondos": ["#496b3a", "#d4a62a", "#d9dfc4"]
+      },
+      "producto": {
+        "fondos": ["#d9dfc4", "#e7c76a", "#496b3a"],
+        "intervaloFondoMs": 4000
+      }
+    }
+  }
+}

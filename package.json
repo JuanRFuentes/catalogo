@@ -1,0 +1,13 @@
+{
+  "name": "vision-creativa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scan": "node scripts/scan-designs.js",
+    "build": "node scripts/build.js"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}

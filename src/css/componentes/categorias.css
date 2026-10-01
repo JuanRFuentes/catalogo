@@ -1,0 +1,260 @@
+/* =========================================================
+   VISIÓN CREATIVA — CATEGORÍAS
+========================================================= */
+
+.home-categories{
+  height:80px;
+  display:flex;
+  gap:10px;
+  padding:0 7%;
+  align-items:center;
+
+  position:relative;
+  z-index:3;
+
+  overflow-x:auto;
+  scrollbar-width:none;
+
+  box-sizing:border-box;
+}
+
+.home-categories::-webkit-scrollbar{
+  display:none;
+}
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.home-cat{
+  height:48px;
+  padding:0 15px;
+
+  border:0;
+  border-radius:48px;
+
+  background:rgba(255,255,255,.72);
+
+  box-shadow:
+    0 8px 22px rgba(48,89,130,.06);
+
+  font-size:14px;
+  color:#536987;
+
+  white-space:nowrap;
+
+  flex:0 0 auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex-direction:row;
+  flex-wrap:nowrap;
+
+  box-sizing:border-box;
+  line-height:1;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+/* =========================================================
+   CATEGORÍA ACTIVA
+========================================================= */
+
+.home-cat.active{
+  background:
+    linear-gradient(
+      90deg,
+      #f6248c,
+      #ff0b82
+    );
+
+  color:#fff;
+
+  padding-left:8px;
+  padding-right:16px;
+
+  gap:8px;
+}
+
+/* =========================================================
+   MINIATURA
+========================================================= */
+
+.home-cat .home-cat-thumb{
+  width:0;
+  height:38px;
+
+  flex:0 0 0;
+
+  margin:0;
+  padding:0;
+
+  opacity:0;
+
+  transform:scale(.72);
+
+  overflow:hidden;
+
+  object-fit:cover;
+  border-radius:50%;
+
+  transition:
+    width .2s ease,
+    flex-basis .2s ease,
+    opacity .2s ease,
+    transform .2s ease;
+}
+
+.home-cat.active .home-cat-thumb{
+  width:38px;
+  flex-basis:38px;
+
+  opacity:1;
+
+  transform:scale(1);
+}
+
+/* =========================================================
+   HOVER MINIATURA
+========================================================= */
+
+.home-cat:not(.active):hover .home-cat-thumb,
+.home-cat:not(.active):focus-visible .home-cat-thumb{
+  width:38px;
+  flex-basis:38px;
+
+  opacity:1;
+
+  transform:scale(1);
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.home-cat:not(.active):hover,
+.home-cat:not(.active):focus-visible{
+  background:#1685d4;
+  color:#fff;
+
+  box-shadow:
+    0 8px 22px rgba(22,133,212,.24);
+
+  transform:translateY(-1px);
+}
+
+/* =========================================================
+   MÓVIL — ≤800px
+========================================================= */
+
+@media (max-width:800px){
+
+  .home-categories{
+    height:80px;
+
+    padding:0 6%;
+    gap:9px;
+
+    /*
+      Conservamos la posición que ya funciona.
+      NO tocar el Hero.
+    */
+    margin-top:-190px;
+  }
+
+  .home-cat{
+    height:46px;
+
+    padding:0 14px;
+
+    font-size:14px;
+  }
+
+  .home-cat.active{
+    padding-left:8px;
+    padding-right:16px;
+
+    gap:7px;
+  }
+
+  .home-cat .home-cat-thumb{
+    height:31px;
+  }
+
+  .home-cat.active .home-cat-thumb{
+    width:31px;
+    flex-basis:31px;
+  }
+}
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS — ≤390px
+========================================================= */
+
+@media (max-width:390px){
+
+  .home-categories{
+    height:80px;
+
+    margin-top:-195px;
+
+    padding:0 6%;
+    gap:8px;
+  }
+
+  .home-cat{
+    height:44px;
+
+    padding:0 13px;
+
+    font-size:13px;
+  }
+
+  .home-cat.active{
+    padding-left:7px;
+    padding-right:14px;
+  }
+}
+
+/* =========================================================
+   ESCRITORIO — ≥801px
+========================================================= */
+
+@media (min-width:801px){
+
+  .home-categories{
+    margin-top:-130px;
+
+    height:72px;
+
+    padding:0 105px;
+    gap:12px;
+  }
+
+  .home-cat{
+    height:54px;
+    min-height:54px;
+
+    padding:0 22px;
+
+    font-size:18px;
+  }
+
+  .home-cat.active{
+    padding-left:14px;
+    padding-right:25px;
+
+    gap:8px;
+  }
+
+  .home-cat.active .home-cat-thumb{
+    width:38px;
+    flex-basis:38px;
+  }
+}

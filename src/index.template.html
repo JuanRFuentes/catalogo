@@ -1,0 +1,690 @@
+﻿<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visión Creativa</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/main.css"
+    >
+</head>
+
+<body>
+
+<section
+    class="catalog-home"
+    id="catalogHome"
+>
+
+    <div class="home-app">
+
+        <!-- DECORACIONES -->
+
+        <div class="home-dots d1">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="home-dots d2">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="home-dots d3">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="home-dots d4">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+         
+        <div class="home-dots d5">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="home-pill-decor home-pill-a"></div>
+        <div class="home-pill-decor home-pill-b"></div>
+
+
+        <!-- HEADER -->
+
+     <header class="home-topbar">
+
+    <img 
+        class="home-logo-image" 
+        src="./hero/logo.png" 
+        alt="Visión Creativa" 
+    >
+
+    <div class="home-header-actions">
+
+        <form class="home-search" id="homeSearchPanel" role="search" hidden>
+            <label class="visually-hidden" for="homeSearchInput">Buscar diseños por nombre, código o categoría</label>
+            <input id="homeSearchInput" type="text" inputmode="search" enterkeyhint="search" placeholder="Buscar diseños o categorías" autocomplete="off">
+            <p class="visually-hidden" id="homeSearchStatus" aria-live="polite" hidden></p>
+        </form>
+
+        <button 
+            type="button" 
+            class="home-header-button" 
+            aria-label="Buscar"
+            id="headerSearchButton"
+        >
+            <svg
+                class="home-header-icon"
+                id="headerSearchIcon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <circle
+                    cx="11"
+                    cy="11"
+                    r="7"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                />
+                <path
+                    d="M16.2 16.2L21 21"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                />
+            </svg>
+        </button>
+
+        <button 
+            type="button" 
+            class="home-header-button header-cart-button" 
+            data-cart-trigger
+            aria-label="Carrito"
+            id="headerCartButton"
+            aria-controls="commerceDrawer"
+            aria-expanded="false"
+        >
+            <svg
+                class="home-header-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <path
+                    d="M3 4H5L7.2 14.2C7.4 15.2 8.3 16 9.3 16H17.5C18.4 16 19.2 15.4 19.5 14.5L21 8H6"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+                <circle
+                    cx="10"
+                    cy="20"
+                    r="1.2"
+                    fill="currentColor"
+                />
+                <circle
+                    cx="18"
+                    cy="20"
+                    r="1.2"
+                    fill="currentColor"
+                />
+            </svg>
+            <span class="header-cart-badge" aria-live="polite" hidden>0</span>
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =====================================================
+     DETALLES DEL PRODUCTO
+===================================================== -->
+
+<section
+    class="home-product-details"
+    id="homeProductDetails"
+    aria-label="Detalles del producto"
+    aria-hidden="true"
+>
+    <div class="details-inner">
+
+        <!-- VISOR DEL PRODUCTO -->
+
+        <div class="details-visual">
+
+            <div class="details-image-background"></div>
+            <span class="details-orb details-orb-blue" aria-hidden="true"></span>
+            <span class="details-orb details-orb-purple" aria-hidden="true"></span>
+
+            <div class="details-shirt">
+                <img
+                    class="details-shirt-base"
+                    id="detailsShirtBase"
+                    src=""
+                    alt="Playera del producto"
+                >
+
+                <img
+                    class="details-shirt-print"
+                    id="detailsShirtPrint"
+                    src=""
+                    alt="Diseño estampado"
+                >
+            </div>
+
+            <!-- Navegación: mostrar solo si existen frente y espalda -->
+            <div
+                class="details-view-controls"
+                id="detailsViewControls"
+                hidden
+                aria-label="Cambiar vista de la playera"
+            >
+                <button
+                    type="button"
+                    class="details-view-arrow"
+                    id="detailsViewPrev"
+                    aria-label="Ver frente"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                            d="M15 18L9 12L15 6"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+
+                <span
+                    class="details-view-label"
+                    id="detailsViewLabel"
+                    aria-live="polite"
+                >
+                    Frente
+                </span>
+
+                <button
+                    type="button"
+                    class="details-view-arrow"
+                    id="detailsViewNext"
+                    aria-label="Ver espalda"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                            d="M9 18L15 12L9 6"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="details-image-label">
+                <span class="details-image-dot"></span>
+                <span class="details-image-label-text">Vista previa del diseño</span>
+                <span class="details-image-label-topline">
+                    <span class="details-image-label-category" id="detailsImageCategory"></span>
+                    <span class="details-image-label-sku" id="detailsSku"></span>
+                </span>
+                <span class="details-image-label-description" id="detailsImageDescription"></span>
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN Y PERSONALIZACIÓN -->
+
+        <div class="details-info">
+
+            <!-- Datos del producto -->
+
+            <div class="details-product-heading">
+                <div class="details-category-row">
+                    <span class="details-category" id="detailsCategory">Colección</span>
+                    <button type="button" class="details-close" id="detailsClose" aria-label="Volver atrás">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="details-product-summary">
+                    <h2 id="detailsName">MAE006</h2>
+                    <strong class="details-price" id="detailsPrice">$MXN</strong>
+                </div>
+                <p class="details-description" id="detailsDescription">Playera de cuello redondo, confeccionada en algodón 100%.</p>
+            </div>
+
+            <!-- OPCIONES -->
+
+            <div class="details-options">
+              <div class="details-options-track">
+                <div class="details-options-panel">
+
+                <!-- Género: cuatro chips horizontales -->
+
+                <div class="details-option-group">
+                    <span class="details-option-title">
+                        Género
+                    </span>
+
+                    <div
+                        class="details-genders"
+                        id="detailsGenders"
+                        role="group"
+                        aria-label="Seleccionar género"
+                    >
+                        <button
+                            type="button"
+                            class="details-gender"
+                            data-gender="Dama"
+                            aria-pressed="false"
+                        >
+                            Dama
+                        </button>
+
+                        <button
+                            type="button"
+                            class="details-gender active"
+                            data-gender="Caballero"
+                            aria-pressed="true"
+                        >
+                            Caballero
+                        </button>
+
+                        <button
+                            type="button"
+                            class="details-gender"
+                            data-gender="Niño"
+                            aria-pressed="false"
+                        >
+                            Niño
+                        </button>
+
+                        <button
+                            type="button"
+                            class="details-gender"
+                            data-gender="Joven"
+                            aria-pressed="false"
+                        >
+                            Joven
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tallas y cantidad -->
+
+                <div class="details-size-quantity">
+
+                    <div class="details-option-group details-size-group">
+                        <span class="details-option-title">
+                            Talla
+                        </span>
+
+                        <div class="details-sizes" id="detailsSizes" role="group" aria-label="Seleccionar talla">
+                            <button type="button" class="details-size" data-size="CH" aria-pressed="false">CH</button>
+                            <button type="button" class="details-size active" data-size="M" aria-pressed="true">M</button>
+                            <button type="button" class="details-size" data-size="G" aria-pressed="false">G</button>
+                            <button type="button" class="details-size" data-size="EG" aria-pressed="false">EG</button>
+                            <button type="button" class="details-size" data-size="2XL" aria-pressed="false">2XL</button>
+                            <button type="button" class="details-size" data-size="3XL" aria-pressed="false">3XL</button>
+                        </div>
+                    </div>
+
+                    <div class="details-option-group details-quantity-group">
+                        <span class="details-option-title">
+                            Cantidad
+                        </span>
+
+                        <div class="details-quantity" id="detailsQuantity">
+                            <button
+                                type="button"
+                                class="details-quantity-button"
+                                id="detailsQuantityPlus"
+                                aria-label="Aumentar cantidad"
+                            >
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path
+                                        d="M12 5V19M5 12H19"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </button>
+
+                            <output
+                                class="details-quantity-value"
+                                id="detailsQuantityValue"
+                                aria-live="polite"
+                            >1</output>
+
+                            <button
+                                type="button"
+                                class="details-quantity-button"
+                                id="detailsQuantityMinus"
+                                aria-label="Disminuir cantidad"
+                            >
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path
+                                        d="M5 12H19"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Colores -->
+
+                <div class="details-option-group">
+                    <span class="details-option-title">
+                        Color
+                    </span>
+
+                    <button type="button" class="details-color-selection" id="detailsColorSelection" aria-label="Abrir selección de colores">
+                        <span class="details-color-selected-swatch" id="detailsColorSelectedSwatch" aria-hidden="true"></span>
+                        <span id="detailsColorSelectedName">Elige color</span>
+                    </button>
+
+                    <div
+                        class="details-colors"
+                        id="detailsColors"
+                        role="group"
+                        aria-label="Seleccionar color"
+                    >
+                        <button
+                            type="button"
+                            class="details-color active"
+                            data-color="Blanco"
+                            aria-label="Blanco"
+                            aria-pressed="true"
+                            style="--shirt-color: #ffffff"
+                        ></button>
+
+                        <button
+                            type="button"
+                            class="details-color"
+                            data-color="Negro"
+                            aria-label="Negro"
+                            aria-pressed="false"
+                            style="--shirt-color: #171717"
+                        ></button>
+
+                        <button
+                            type="button"
+                            class="details-color"
+                            data-color="Rosa"
+                            aria-label="Rosa"
+                            aria-pressed="false"
+                            style="--shirt-color: #f7b8d7"
+                        ></button>
+                        <button type="button" class="details-color" data-color="Azul" aria-label="Azul" aria-pressed="false" style="--shirt-color: #b9d8f5"></button>
+                        <button type="button" class="details-color-expand" id="detailsColorExpand" aria-label="Ver todos los colores" aria-expanded="false">+</button>
+                    </div>
+                </div>
+                </div>
+                <div class="details-color-browser" id="detailsColorBrowser" aria-hidden="true">
+                    <div class="details-color-browser-heading">
+                        <span class="details-option-title">Colores disponibles</span>
+                    </div>
+                    <div class="details-color-browser-list" id="detailsColorBrowserList"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ACCIÓN -->
+
+            <div class="details-actions">
+
+                <button
+                    type="button"
+                    class="details-add-cart"
+                    id="detailsAddCart"
+                >
+                    <span id="detailsAddCartLabel">Agregar a cotización</span>
+                </button>
+
+                <span class="details-note">
+                    Color sujeto a disponibilidad.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+        <!-- HERO -->
+
+        <section class="home-hero">
+
+            <div class="home-hero-copy">
+
+                <div class="home-kicker">
+                    N U E V O S &nbsp; L A N Z A M I E N T O S
+                </div>
+
+                <h1 class="home-headline">
+                    ELEVA
+                    <span class="blue">TU ESTILO</span>
+                </h1>
+
+                <div class="home-brush">
+                    <span>CADA DÍA</span>
+                </div>
+
+                <div class="home-sub">
+                    Explora lo último en<br>
+                    moda y estilo de vida
+                </div>
+
+            </div>
+
+
+            <div class="home-hero-art">
+
+                <div class="home-hero-pink"></div>
+
+                <img
+                    src="./hero/personaje.png"
+                    alt="Modelo Visión Creativa"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORÍAS -->
+
+        <nav 
+    class="home-categories" 
+    id="homeCategoryNav" 
+    aria-label="Categorías"
+>
+
+    <button type="button" class="home-cat active">
+        Todos
+    </button>
+
+    <button type="button" class="home-cat">
+        <img
+            class="home-cat-thumb"
+            src="./diseños/Maestros/007-T-F.png"
+            alt=""
+        >
+        <span>Maestros</span>
+    </button>
+
+    <button type="button" class="home-cat">
+        <img
+            class="home-cat-thumb"
+            src="./diseños/Navidad/001-T-F.png"
+            alt=""
+        >
+        <span>Navidad</span>
+    </button>
+
+</nav>
+
+
+        <!-- RECOMENDACIONES -->
+<section
+    class="home-recs"
+    id="homeRecommendations"
+>
+
+    <div class="home-rec-head">
+
+        <div>
+
+            <h2 class="home-rec-title">
+                <span class="home-star">✦</span>
+                coleccion del mes
+            </h2>
+
+            <p class="home-rec-sub">
+                Una selección especial de diseños.
+            </p>
+
+        </div>
+
+        <button
+            type="button"
+            class="home-see"
+            id="homeRecommendationsSeeAll"
+        >
+            Ver todo
+        </button>
+
+    </div>
+
+   <div class="home-recommendations-wrap">
+
+    <button
+        type="button"
+        class="home-rec-arrow home-rec-arrow-left"
+        id="homeRecArrowLeft"
+        aria-label="Recomendaciones anteriores"
+    >
+        ‹
+    </button>
+
+    <div 
+        class="home-grid home-recommendation-carousel" 
+        id="homeRecommendationGrid"
+    ></div>
+
+    <button
+        type="button"
+        class="home-rec-arrow home-rec-arrow-right"
+        id="homeRecArrowRight"
+        aria-label="Más recomendaciones"
+    >
+        ›
+    </button>
+
+</div>
+
+</section>
+
+        <!-- TODOS -->
+
+        <section
+            class="home-all-section"
+            id="homeAllSection"
+        >
+
+            <div class="home-rec-head">
+
+                <div>
+
+                  
+
+                </div>
+
+                <button
+                    type="button"
+                    class="home-see"
+                    id="homeSeeAll"
+                >
+                    Ver todo
+                </button>
+
+            </div>
+
+            <div
+                class="home-grid home-all-grid"
+                id="homeDesignGrid"
+            ></div>
+
+            <section class="home-search-empty" id="homeSearchEmpty" aria-live="polite" hidden>
+                <span class="home-search-empty-orb" aria-hidden="true"></span>
+                <img src="./hero/playeras/search.png" alt="Personaje buscando una playera con una lupa" loading="lazy">
+                <div class="home-search-empty-copy">
+                    <h2>No encontramos esa playera</h2>
+                    <p>Intenta con otro nombre o código para encontrar tu diseño.</p>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!-- NAVEGACIÓN INFERIOR -->
+
+      
+
+    </div>
+
+</section>
+
+
+<template id="commercePanelTemplate">
+    <section class="commerce-panel-host" id="commercePanelHost" aria-label="Cotización">
+    <div class="commerce-drawer-content">
+        <section class="commerce-drawer-panel" id="commerceQuotePanel" aria-label="Lista de cotización">
+            <div class="commerce-item-list" id="commerceQuoteList"></div>
+            <p class="commerce-empty-state" id="commerceQuoteEmpty">Tu lista de cotización está vacía.</p>
+        </section>
+    </div>
+    <footer class="commerce-quote-footer" id="commerceQuoteFooter">
+        <div class="commerce-quote-summary">
+            <span id="commerceQuoteItemCount">0 prendas</span>
+            <strong id="commerceQuoteTotal">Precio por confirmar</strong>
+        </div>
+        <button type="button" class="commerce-order-button" id="commerceOrderButton" disabled>
+            Solicitar cotización
+        </button>
+    </footer>
+    </section>
+</template>
+
+
+<script src="./js/vision-creativa-detalles-interaccion.js"></script>
+<script type="module" src="./js/app.js"></script>
+<script type="module" src="./js/pruebas/test-colores.js"></script>
+</body>
+</html>

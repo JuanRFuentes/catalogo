@@ -1,0 +1,1016 @@
+/* =========================================================
+   VISIÓN CREATIVA — COLECCIÓN DEL MES
+========================================================= */
+
+:root{
+  --rec-rosa:#f8c5df;
+  --rec-azul:#d9edff;
+  --rec-gris:#e2e5e9;
+}
+
+
+/* =========================================================
+   SECCIÓN
+========================================================= */
+
+.home-recs{
+  padding:5px 7% 20px;
+  margin-top:0;
+  position:relative;
+  z-index:2;
+  box-sizing:border-box;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.home-rec-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+  gap:10px;
+}
+
+.home-rec-title{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:26px;
+  line-height:1.1;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  letter-spacing:-.3px;
+  color:#111;
+}
+
+.home-star{
+  color:#f4127f;
+  font-size:25px;
+  line-height:1;
+  flex:0 0 auto;
+}
+
+.home-rec-sub{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:15px;
+  line-height:1.3;
+  color:#5e7597;
+  margin:4px 0 0;
+}
+
+
+/* =========================================================
+   BOTÓN VER TODO
+========================================================= */
+
+.home-see{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  color:#1685be;
+  background:#d9f0ff;
+  border:0;
+  border-radius:30px;
+  padding:10px 15px;
+  white-space:nowrap;
+  cursor:pointer;
+  flex:0 0 auto;
+  transition:
+    background .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.home-see:hover{
+  background:#c8eaff;
+  transform:translateY(-1px);
+  box-shadow:
+    0 6px 16px rgba(22,133,190,.12);
+}
+
+
+/* =========================================================
+   GRID BASE
+========================================================= */
+
+.home-grid{
+  display:grid;
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+
+/* =========================================================
+   CARRUSEL
+========================================================= */
+
+.home-recommendation-carousel{
+  display:flex;
+  flex-flow:row nowrap;
+  gap:10px;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+
+  padding-bottom:6px;
+
+  grid-template-columns:none;
+  flex-wrap:nowrap;
+
+  cursor:grab;
+
+  touch-action:pan-x;
+
+  box-sizing:border-box;
+}
+
+.home-recommendation-carousel::-webkit-scrollbar{
+  display:none;
+}
+
+.home-recommendation-carousel.dragging{
+  cursor:grabbing;
+  scroll-behavior:auto;
+  scroll-snap-type:none;
+  user-select:none;
+}
+
+.home-recommendation-carousel.dragging img{
+  pointer-events:none;
+}
+
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.home-card{
+  min-width:0;
+  border:0;
+  padding:0;
+  background:transparent;
+  text-align:left;
+  cursor:pointer;
+  color:#071b4b;
+  box-sizing:border-box;
+}
+
+.home-recommendation-carousel .home-rec-card{
+  flex:0 0 145px;
+  width:145px;
+  min-width:0;
+  scroll-snap-align:start;
+}
+
+
+/* =========================================================
+   FOTO
+========================================================= */
+
+.home-photo{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  aspect-ratio:272 / 309;
+  background:#f3f6fa;
+  box-shadow:
+    0 6px 18px rgba(48,89,130,.08);
+  box-sizing:border-box;
+}
+
+.home-recommendation-carousel .home-rec-photo{
+  aspect-ratio:272 / 309;
+}
+
+
+/* =========================================================
+   PLAYERA
+========================================================= */
+
+.home-mini-shirt{
+  display:flex;
+
+  width:94%;
+  height:94%;
+
+  justify-content:center;
+  align-items:center;
+
+  position:relative;
+
+  margin:auto;
+
+  isolation:isolate;
+}
+
+
+/* =========================================================
+   PLAYERA ORIGINAL
+========================================================= */
+
+.home-mini-shirt-base{
+  display:block;
+
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+
+  position:absolute;
+  inset:0;
+
+  /*
+   * La imagen original NO se modifica.
+   * Esto conserva sombras, arrugas y volumen.
+   */
+
+  filter:none;
+
+  z-index:1;
+}
+
+
+/* =========================================================
+   CAPA DE COLOR
+========================================================= */
+
+.home-mini-shirt::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  pointer-events:none;
+
+  background:
+    var(--shirt-tint,transparent);
+
+  z-index:2;
+
+  /*
+   * La misma PNG de la playera funciona
+   * como máscara.
+   */
+
+  -webkit-mask-image:
+    var(--shirt-mask);
+
+  mask-image:
+    var(--shirt-mask);
+
+  -webkit-mask-repeat:
+    no-repeat;
+
+  mask-repeat:
+    no-repeat;
+
+  -webkit-mask-position:
+    center;
+
+  mask-position:
+    center;
+
+  -webkit-mask-size:
+    contain;
+
+  mask-size:
+    contain;
+
+  /*
+   * Conservamos las sombras originales.
+   */
+
+  mix-blend-mode:multiply;
+
+  opacity:1;
+}
+
+
+/* =========================================================
+   PLAYERA BLANCA
+========================================================= */
+
+.home-mini-shirt.shirt-blanco{
+  --shirt-tint:transparent;
+}
+
+
+/* =========================================================
+   PLAYERA ROSA
+========================================================= */
+
+.home-mini-shirt.shirt-rosa{
+  --shirt-tint:#f39bc5;
+}
+
+
+/* =========================================================
+   PLAYERA AZUL
+========================================================= */
+
+.home-mini-shirt.shirt-azul{
+  --shirt-tint:#86c8f2;
+}
+
+.home-mini-shirt.shirt-naranja{
+  --shirt-tint:#f97316;
+}
+
+.home-mini-shirt.shirt-negro{
+  --shirt-tint:#211e25;
+}
+
+
+/* =========================================================
+   ESTAMPADO BASE
+========================================================= */
+
+.home-mini-print{
+  display:block;
+
+  width:40%;
+  height:40%;
+
+  pointer-events:none;
+
+  object-fit:contain;
+
+  position:absolute;
+
+  z-index:3;
+
+  /*
+   * Posición de respaldo.
+   */
+
+  left:30%;
+  top:31%;
+}
+
+
+/* =========================================================
+   POSICIÓN — FRENTE — TOP
+========================================================= */
+
+.home-mini-print.print-front.print-top{
+  width:40%;
+  height:40%;
+
+  left:30%;
+  top:18%;
+}
+
+
+/* =========================================================
+   POSICIÓN — FRENTE — CENTER
+========================================================= */
+
+.home-mini-print.print-front.print-center{
+  width:40%;
+  height:40%;
+
+  left:30%;
+  top:28%;
+}
+
+
+/* =========================================================
+   POSICIÓN — ESPALDA — TOP
+========================================================= */
+
+.home-mini-print.print-back.print-top{
+  width:40%;
+  height:40%;
+
+  left:30%;
+  top:14%;
+}
+
+
+/* =========================================================
+   POSICIÓN — ESPALDA — CENTER
+========================================================= */
+
+.home-mini-print.print-back.print-center{
+  width:40%;
+  height:40%;
+
+  left:30%;
+  top:24%;
+}
+
+
+/* =========================================================
+   CONTRASTE SOBRE PLAYERA BLANCA
+========================================================= */
+
+.home-mini-print.contraste-blanco{
+  filter:
+    drop-shadow(
+      0 0 1px
+      rgba(0,0,0,.72)
+    );
+}
+
+
+/* =========================================================
+   FONDOS DE LAS TARJETAS
+========================================================= */
+
+.home-rec-card:nth-child(3n+1) .home-rec-photo{
+  background:var(--rec-rosa);
+}
+
+.home-rec-card:nth-child(3n+2) .home-rec-photo{
+  background:var(--rec-azul);
+}
+
+.home-rec-card:nth-child(3n) .home-rec-photo{
+  background:var(--rec-gris);
+}
+
+
+/* =========================================================
+   NOMBRE
+========================================================= */
+
+.home-name{
+  display:block;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  margin:9px 4px 2px;
+
+  white-space:nowrap;
+
+  overflow:hidden;
+
+  text-overflow:ellipsis;
+
+  color:#071b4b;
+}
+
+
+/* =========================================================
+   PRECIO
+========================================================= */
+
+.home-price{
+  display:block;
+
+  font-size:10px;
+
+  font-weight:800;
+
+  margin-left:4px;
+
+  color:#071b4b;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.home-recommendations-wrap{
+  position:relative;
+  width:100%;
+  box-sizing:border-box;
+}
+
+
+/* =========================================================
+   FLECHAS
+========================================================= */
+
+.home-rec-arrow{
+  position:absolute;
+
+  top:40%;
+  transform:translateY(-50%);
+
+  width:40px;
+  height:40px;
+
+  border:0;
+  border-radius:50%;
+
+  background:#d9edff;
+
+  color:#1685be;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:0;
+
+  font-family:Arial,Helvetica,sans-serif;
+
+  font-size:30px;
+  font-weight:400;
+
+  line-height:1;
+
+  cursor:pointer;
+
+  z-index:20;
+
+  box-shadow:
+    0 6px 18px rgba(48,89,130,.12);
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    box-shadow .2s ease,
+    opacity .2s ease;
+}
+
+.home-rec-arrow:hover{
+  background:#c8eaff;
+
+  transform:
+    translateY(-50%)
+    scale(1.08);
+
+  box-shadow:
+    0 8px 20px rgba(48,89,130,.18);
+}
+
+.home-rec-arrow:active{
+  transform:
+    translateY(-50%)
+    scale(.96);
+}
+
+.home-rec-arrow:disabled{
+  opacity:.28;
+  cursor:default;
+  pointer-events:none;
+}
+
+.home-rec-arrow-left{
+  left:-20px;
+}
+
+.home-rec-arrow-right{
+  right:-20px;
+}
+
+
+/* =========================================================
+   ANIMACIÓN DE AYUDA
+========================================================= */
+
+.home-recommendation-carousel.hint-shake{
+  animation:
+    recCarouselShake .65s ease-in-out 1;
+}
+
+@keyframes recCarouselShake{
+
+  0%{
+    transform:translateX(0);
+  }
+
+  25%{
+    transform:translateX(-8px);
+  }
+
+  50%{
+    transform:translateX(6px);
+  }
+
+  75%{
+    transform:translateX(-3px);
+  }
+
+  100%{
+    transform:translateX(0);
+  }
+}
+
+
+/* =========================================================
+   ESCRITORIO — ≥801px
+========================================================= */
+
+@media (min-width:801px){
+
+  .home-recs{
+    padding:40px 7% 20px;
+    margin-top:0;
+  }
+
+  .home-rec-title{
+    font-size:28px;
+  }
+
+  .home-rec-sub{
+    font-size:15px;
+  }
+
+  .home-see{
+    font-size:14px;
+    padding:10px 15px;
+  }
+
+  .home-recommendation-carousel{
+    gap:12px;
+
+    padding-left:8px;
+    padding-right:8px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    cursor:grab;
+    touch-action:pan-x;
+
+    scroll-snap-type:x mandatory;
+  }
+
+  .home-recommendation-carousel .home-rec-card{
+    flex:0 0 145px;
+    width:145px;
+    min-width:145px;
+  }
+
+  .home-rec-arrow{
+    display:flex;
+  }
+}
+
+
+/* =========================================================
+   MÓVIL — ≤800px
+========================================================= */
+
+@media (max-width:800px){
+
+  .home-recs{
+    padding:5px 6% 20px;
+    margin-top:0;
+  }
+
+  .home-rec-head{
+    align-items:center;
+    margin-bottom:10px;
+    gap:8px;
+  }
+
+  .home-rec-title{
+    font-size:20px;
+    line-height:1.05;
+    gap:5px;
+  }
+
+  .home-star{
+    font-size:23px;
+  }
+
+  .home-rec-sub{
+    font-size:13px;
+    line-height:1.25;
+    margin-top:4px;
+  }
+
+  .home-see{
+    font-size:14px;
+    padding:9px 14px;
+    border-radius:28px;
+  }
+
+
+  /* =======================================================
+     CARRUSEL MÓVIL
+  ======================================================= */
+
+  .home-recommendation-carousel{
+    display:grid;
+
+    grid-template-columns:
+      repeat(3,minmax(0,1fr));
+
+    gap:8px;
+
+    width:100%;
+
+    overflow:visible;
+
+    padding:3px 0 10px;
+
+    cursor:default;
+
+    touch-action:auto;
+
+    scroll-snap-type:none;
+
+    scroll-behavior:auto;
+
+    box-sizing:border-box;
+  }
+
+
+  .home-recommendation-carousel
+  .home-rec-card{
+    width:auto;
+    min-width:0;
+    flex:none;
+    scroll-snap-align:none;
+  }
+
+
+  .home-recommendation-carousel
+  .home-rec-card:nth-child(n+4){
+    display:none;
+  }
+
+
+  /* =====================================================
+     FOTO MÓVIL
+  ===================================================== */
+
+  .home-photo{
+    border-radius:12px;
+  }
+
+
+  .home-name{
+    font-size:13px;
+    margin:
+      7px
+      4px
+      1px;
+  }
+
+
+  .home-price{
+    font-size:14px;
+    margin-left:4px;
+  }
+
+
+
+
+
+  /* =====================================================
+     PLAYERA MÓVIL
+  ===================================================== */
+
+  .home-photo.home-shirt-photo{
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:272 / 309;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+    border:0;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-shirt{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-shirt-base{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    object-position:center;
+  }
+
+
+  /* =====================================================
+     ESTAMPADO MÓVIL — BASE
+     
+     IMPORTANTE:
+     NO ponemos top:31%.
+     Las clases print-top y print-center
+     deben conservar sus posiciones.
+  ===================================================== */
+
+  .home-photo.home-shirt-photo
+  .home-mini-print{
+    position:absolute;
+
+    width:40%;
+    height:40%;
+
+    object-fit:contain;
+
+    pointer-events:none;
+
+    z-index:3;
+  }
+
+
+  /* =====================================================
+     FRENTE — MÓVIL
+  ===================================================== */
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-front.print-top{
+    left:30%;
+    top:18%;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-front.print-center{
+    left:30%;
+    top:28%;
+  }
+
+
+  /* =====================================================
+     ESPALDA — MÓVIL
+     
+     Independiente del frente.
+  ===================================================== */
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-back.print-top{
+    left:30%;
+    top:14%;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-back.print-center{
+    left:30%;
+    top:24%;
+  }
+
+
+  /* =====================================================
+     FLECHAS
+  ===================================================== */
+
+  .home-rec-arrow{
+    display:none;
+  }
+}
+
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS — ≤390px
+========================================================= */
+
+@media (max-width:390px){
+
+  .home-recs{
+    padding:5px 6% 18px;
+    margin-top:0;
+  }
+
+  .home-rec-head{
+    margin-bottom:9px;
+  }
+
+  .home-rec-title{
+    font-size:20px;
+    line-height:1.05;
+  }
+
+  .home-star{
+    font-size:22px;
+  }
+
+  .home-rec-sub{
+    font-size:13px;
+  }
+
+  .home-see{
+    font-size:13px;
+    padding:8px 12px;
+    border-radius:26px;
+  }
+
+
+  .home-recommendation-carousel{
+    grid-template-columns:
+      repeat(3,minmax(0,1fr));
+
+    gap:7px;
+
+    overflow:visible;
+
+    touch-action:auto;
+
+    cursor:default;
+
+    scroll-snap-type:none;
+  }
+
+
+  .home-recommendation-carousel
+  .home-rec-card{
+    width:auto;
+    min-width:0;
+  }
+
+
+  .home-recommendation-carousel
+  .home-rec-card:nth-child(n+4){
+    display:none;
+  }
+
+
+  .home-photo{
+    border-radius:11px;
+  }
+
+
+  .home-name{
+    font-size:13px;
+
+    margin:
+      7px
+      4px
+      1px;
+  }
+
+
+  .home-price{
+    font-size:14px;
+  }
+
+
+
+
+
+  /* =====================================================
+     POSICIONES — TELÉFONO PEQUEÑO
+     
+     Se mantienen exactamente iguales.
+  ===================================================== */
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-front.print-top{
+    left:30%;
+    top:18%;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-front.print-center{
+    left:30%;
+    top:28%;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-back.print-top{
+    left:30%;
+    top:14%;
+  }
+
+
+  .home-photo.home-shirt-photo
+  .home-mini-print.print-back.print-center{
+    left:30%;
+    top:24%;
+  }
+}
