@@ -2317,3 +2317,47 @@
     #homeProductDetails .details-quantity { min-height:92px; }
     #homeProductDetails .details-add-cart { padding-top:12px; padding-bottom:12px; }
 }
+
+/* Ajuste de laptop: limita el alto del visor y compacta el formulario sin
+   quitar campos, tallas, colores ni acciones. */
+@media (min-width:1025px) and (max-width:1599px) {
+    #homeProductDetails .details-inner {
+        max-width:1000px;
+        min-height:0;
+        gap:12px;
+    }
+    #homeProductDetails .details-visual {
+        align-self:center;
+        width:100%;
+        height:min(400px, 65vh);
+        min-height:0;
+    }
+    #homeProductDetails .details-shirt { width:min(76%, 290px); }
+    #homeProductDetails .details-product-heading .details-description {
+        margin-top:6px;
+        margin-bottom:8px;
+        font-size:16px;
+        line-height:1.4;
+    }
+    #homeProductDetails .details-options { margin-top:8px; }
+    #homeProductDetails .details-options-panel {
+        justify-content:flex-start;
+        gap:7px;
+        padding-right:4px;
+    }
+    #homeProductDetails .details-option-group { gap:5px; }
+    #homeProductDetails .details-gender { min-height:36px; }
+    #homeProductDetails .details-size-group .details-size {
+        height:32px;
+        min-height:32px;
+    }
+    #homeProductDetails .details-quantity {
+        height:88px;
+        min-height:88px;
+    }
+    #homeProductDetails .details-add-cart {
+        min-height:44px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
