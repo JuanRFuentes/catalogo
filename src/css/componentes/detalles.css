@@ -1941,6 +1941,7 @@
         flex-basis:28px;
     }
 }
+
 @media (min-width:801px) and (max-width:1024px) {
     .details-gender { min-height:44px; padding-inline:8px; font-size:12px; }
 }
@@ -2290,4 +2291,29 @@
         height:32px;
         flex-basis:32px;
     }
+}
+
+/* En laptops, reduce la tarjeta completa sin ocultar datos ni controles. */
+@media (min-width:1025px) and (max-width:1599px) {
+    #homeProductDetails .details-inner {
+        min-height:390px;
+        gap:14px;
+        padding:8px;
+    }
+    #homeProductDetails .details-visual { min-height:220px; }
+    #homeProductDetails .details-shirt { width:min(80%, 300px); }
+    #homeProductDetails .details-options:not(.colors-expanded) {
+        height:270px;
+        min-height:270px;
+        flex-basis:270px;
+        gap:6px;
+    }
+    #homeProductDetails .details-info { padding:0 2px; }
+    #homeProductDetails .details-gender { min-height:38px; }
+    #homeProductDetails .details-size-group .details-size {
+        height:34px;
+        min-height:34px;
+    }
+    #homeProductDetails .details-quantity { min-height:92px; }
+    #homeProductDetails .details-add-cart { padding-top:12px; padding-bottom:12px; }
 }
