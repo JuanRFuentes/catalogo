@@ -54,10 +54,10 @@ ARCHIVOS DE PLAYERA
 const ARCHIVOS_PLAYERA = {
 
   frente:
-    '../../hero/playereras/playera-frente.png',
+    './hero/playeras/playera-frente.png',
 
   espalda:
-    '../../hero/playereras/playera-espalda.png'
+    './hero/playeras/playera-espalda.png'
 
 };
 
@@ -66,19 +66,9 @@ const ARCHIVOS_PLAYERA = {
 ==========================================================
 NOTA
 
-Si tu carpeta real es:
-
-hero/playeras/
-
-y no:
-
-hero/playereras/
-
-usa exactamente:
-
-../../hero/playeras/playera-frente.png
-
-../../hero/playeras/playera-espalda.png
+Las rutas se resuelven desde la raíz publicada del sitio. Usa ./hero
+para que también funcionen cuando GitHub Pages publique el repositorio
+bajo una ruta como /catalogo/.
 ==========================================================
 */
 
@@ -86,10 +76,10 @@ usa exactamente:
 const ARCHIVOS_PLAYERA_REAL = {
 
   frente:
-    '../../hero/playeras/playera-frente.png',
+    './hero/playeras/playera-frente.png',
 
   espalda:
-    '../../hero/playeras/playera-espalda.png'
+    './hero/playeras/playera-espalda.png'
 
 };
 
