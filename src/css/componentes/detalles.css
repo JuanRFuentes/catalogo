@@ -2322,9 +2322,10 @@
    quitar campos, tallas, colores ni acciones. */
 @media (min-width:1025px) and (max-width:1599px) {
     #homeProductDetails .details-inner {
-        max-width:1000px;
+        max-width:880px;
         min-height:0;
         gap:12px;
+        grid-template-columns:minmax(0, 1fr) minmax(0, .9fr);
     }
     #homeProductDetails .details-visual {
         align-self:center;
@@ -2332,8 +2333,11 @@
         height:min(400px, 65vh);
         min-height:0;
     }
-    #homeProductDetails .details-shirt { width:min(76%, 290px); }
+    #homeProductDetails .details-shirt { width:min(74%, 260px); }
+    #homeProductDetails .details-info,
+    #homeProductDetails .details-options { max-width:390px; }
     #homeProductDetails .details-product-heading .details-description {
+        max-width:370px;
         margin-top:6px;
         margin-bottom:8px;
         font-size:16px;

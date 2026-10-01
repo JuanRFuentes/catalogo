@@ -890,7 +890,8 @@ function mostrarCategoria(
 ========================================================= */
 
 function mostrarCategoriaCompleta(
-    categoria
+    categoria,
+    { soloCategoria = false } = {}
 ){
 
     const contenedor =
@@ -986,6 +987,7 @@ function mostrarCategoriaCompleta(
         'click',
         () => {
 
+            document.querySelector('#catalogHome')?.classList.remove('category-view-active');
             renderizarTodasLasCategorias();
 
             activarBotonTodos();
@@ -1065,21 +1067,13 @@ function mostrarCategoriaCompleta(
 
 
     if(home){
-
-        const seccion =
-            document.querySelector(
-                '#homeAllSection'
-            );
-
-
-        home.scrollTo({
-
-            top:
-                seccion?.offsetTop || 0,
-
-            behavior:'smooth'
-
-        });
+        if (soloCategoria) {
+            home.classList.add('category-view-active');
+            home.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+            const seccion = document.querySelector('#homeAllSection');
+            home.scrollTo({ top: seccion?.offsetTop || 0, behavior: 'smooth' });
+        }
 
     }
 
@@ -1100,7 +1094,7 @@ export function mostrarCategoriaCompletaPorNombre(nombre) {
         return false;
     }
 
-    mostrarCategoriaCompleta(categoria);
+    mostrarCategoriaCompleta(categoria, { soloCategoria: true });
 
     const claves = [categoria.nombre, categoria.carpeta]
         .filter(Boolean)

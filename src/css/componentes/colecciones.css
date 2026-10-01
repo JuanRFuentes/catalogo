@@ -408,3 +408,16 @@
     }
 
 }
+
+/* Ver todo de Colección del mes abre únicamente la categoría seleccionada. */
+#catalogHome.category-view-active .home-app > section:not(#homeAllSection),
+#catalogHome.category-view-active .home-app > nav,
+#catalogHome.category-view-active .home-dots,
+#catalogHome.category-view-active .home-pill-decor {
+    display:none !important;
+}
+
+#catalogHome.category-view-active #homeAllSection {
+    display:block !important;
+    padding-top:18px;
+}
