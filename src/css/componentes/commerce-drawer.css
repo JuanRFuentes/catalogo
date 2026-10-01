@@ -93,7 +93,7 @@
     .commerce-item-meta { font-size:13px; }
 }
 @media (min-width:1025px) {
-    .commerce-item-meta { font-size:18px; line-height:1.55; }
+    .commerce-item-meta { font-size:16px; line-height:1.4; }
 }
 @media (max-width:1024px) {
     .commerce-panel-host { margin-top:0; padding-top:0; }

@@ -745,14 +745,39 @@
     }
 }
 
+/* En laptop y escritorio el carrito ocupa el viewport completo en altura:
+   sin banda gris superior, desplazamiento ni esquinas redondeadas. */
+@media (min-width:1025px) {
+    #productoView.producto-view {
+        position:fixed;
+        inset:0;
+        overflow:hidden;
+    }
+
+    #productoView.producto-view .producto-view-panel {
+        top:0;
+        right:0;
+        bottom:0;
+        height:100vh;
+        height:100dvh;
+        max-height:none;
+        margin:0;
+        border-radius:0;
+    }
+
+    #productoView.producto-view.is-commerce .producto-view-panel {
+        width:min(440px, 42vw);
+    }
+}
+
 /* Laptops: panel universal más bajo, compacto y con el header bien asentado. */
 @media (min-width: 1025px) and (max-width: 1599px) {
     .producto-view-panel {
-        top: 34px;
-        bottom: 20px;
-        height: auto;
-        max-height: calc(100dvh - 54px);
-        border-radius: 24px 0 0 24px;
+        top: 0;
+        bottom: 0;
+        height: 100dvh;
+        max-height: 100dvh;
+        border-radius: 0;
     }
 
     .producto-view-main {
