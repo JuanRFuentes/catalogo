@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 25,
-  "generado": "2026-10-02T20:41:57.248Z",
+  "folioSiguiente": 29,
+  "generado": "2026-10-02T21:08:30.368Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -333,6 +333,74 @@
               "necesitaContraste": false,
               "porcentajeClaro": 0.0754,
               "porcentajeColorido": 0.6295
+            }
+          ]
+        },
+        {
+          "numero": "0025",
+          "sku": "DAAA0025",
+          "imagenes": [
+            {
+              "archivo": "judas_11.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0457,
+              "porcentajeColorido": 0.3753
+            }
+          ]
+        },
+        {
+          "numero": "0026",
+          "sku": "UUAD0026",
+          "imagenes": [
+            {
+              "archivo": "judas_12.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0765,
+              "porcentajeColorido": 0.4997
+            }
+          ]
+        },
+        {
+          "numero": "0027",
+          "sku": "DUJD0027",
+          "imagenes": [
+            {
+              "archivo": "judas_13.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0113,
+              "porcentajeColorido": 0.5823
+            }
+          ]
+        },
+        {
+          "numero": "0028",
+          "sku": "ASSS0028",
+          "imagenes": [
+            {
+              "archivo": "judas_14.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0015,
+              "porcentajeColorido": 0.4178
             }
           ]
         }
