@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 19,
-  "generado": "2026-10-02T19:25:24.271Z",
+  "folioSiguiente": 20,
+  "generado": "2026-10-02T19:26:17.872Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -260,7 +260,25 @@
       "nombre": "marvel",
       "carpeta": "marvel",
       "prefijo": "MAR",
-      "productos": []
+      "productos": [
+        {
+          "numero": "0019",
+          "sku": "EGEG0019",
+          "imagenes": [
+            {
+              "archivo": "pngegg.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0081,
+              "porcentajeColorido": 0.7678
+            }
+          ]
+        }
+      ]
     },
     {
       "nombre": "Navidad",
