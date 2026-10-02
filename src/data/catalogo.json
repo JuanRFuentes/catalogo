@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 41,
-  "generado": "2026-10-02T21:14:08.118Z",
+  "folioSiguiente": 44,
+  "generado": "2026-10-02T21:17:13.757Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -605,6 +605,57 @@
               "necesitaContraste": false,
               "porcentajeClaro": 0.0648,
               "porcentajeColorido": 0.6221
+            }
+          ]
+        },
+        {
+          "numero": "0041",
+          "sku": "DUSU0041",
+          "imagenes": [
+            {
+              "archivo": "judas_5.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0001,
+              "porcentajeColorido": 0.6286
+            }
+          ]
+        },
+        {
+          "numero": "0042",
+          "sku": "ASAD0042",
+          "imagenes": [
+            {
+              "archivo": "judas3.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0466,
+              "porcentajeColorido": 0.7143
+            }
+          ]
+        },
+        {
+          "numero": "0043",
+          "sku": "SDDA0043",
+          "imagenes": [
+            {
+              "archivo": "judas4.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0046,
+              "porcentajeColorido": 0.5817
             }
           ]
         }
