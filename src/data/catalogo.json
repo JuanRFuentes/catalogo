@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 44,
-  "generado": "2026-10-02T21:34:12.526Z",
+  "folioSiguiente": 50,
+  "generado": "2026-10-02T22:06:45.118Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -656,6 +656,108 @@
               "necesitaContraste": false,
               "porcentajeClaro": 0.0046,
               "porcentajeColorido": 0.5817
+            }
+          ]
+        },
+        {
+          "numero": "0044",
+          "sku": "USHS0044",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-1.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.5683,
+              "porcentajeColorido": 0.2546
+            }
+          ]
+        },
+        {
+          "numero": "0045",
+          "sku": "EABP0045",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-13.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.6154,
+              "porcentajeColorido": 0.0566
+            }
+          ]
+        },
+        {
+          "numero": "0046",
+          "sku": "AASE0046",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-14.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0751,
+              "porcentajeColorido": 0.3644
+            }
+          ]
+        },
+        {
+          "numero": "0047",
+          "sku": "WUSA0047",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-15.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.4091,
+              "porcentajeColorido": 0
+            }
+          ]
+        },
+        {
+          "numero": "0048",
+          "sku": "BOAS0048",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-6.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 0.7934
+            }
+          ]
+        },
+        {
+          "numero": "0049",
+          "sku": "ENDU0049",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-8.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.442,
+              "porcentajeColorido": 0.5544
             }
           ]
         }
