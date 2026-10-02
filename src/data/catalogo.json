@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 20,
-  "generado": "2026-10-02T20:33:04.213Z",
+  "folioSiguiente": 21,
+  "generado": "2026-10-02T20:37:41.304Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -250,7 +250,25 @@
       "nombre": "san judas",
       "carpeta": "san judas",
       "prefijo": "SAN",
-      "productos": []
+      "productos": [
+        {
+          "numero": "0020",
+          "sku": "DADD0020",
+          "imagenes": [
+            {
+              "archivo": "judas_6.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0008,
+              "porcentajeColorido": 0.6139
+            }
+          ]
+        }
+      ]
     }
   ]
 }
