@@ -1,66 +1,8 @@
 {
   "version": 4,
   "folioSiguiente": 56,
-  "generado": "2026-10-02T22:49:19.362Z",
+  "generado": "2026-10-02T23:00:11.928Z",
   "categorias": [
-    {
-      "nombre": "carros",
-      "carpeta": "carros",
-      "prefijo": "CAR",
-      "productos": [
-        {
-          "numero": "0015",
-          "sku": "CAR0015",
-          "imagenes": [
-            {
-              "archivo": "0015-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0252,
-              "porcentajeColorido": 0.529
-            }
-          ]
-        },
-        {
-          "numero": "0016",
-          "sku": "CAR0016",
-          "imagenes": [
-            {
-              "archivo": "0016-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0254,
-              "porcentajeColorido": 0.5395
-            }
-          ]
-        },
-        {
-          "numero": "0017",
-          "sku": "CAR0017",
-          "imagenes": [
-            {
-              "archivo": "0017-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0541,
-              "porcentajeColorido": 0.6676
-            }
-          ]
-        }
-      ]
-    },
     {
       "nombre": "san judas",
       "carpeta": "san judas",
