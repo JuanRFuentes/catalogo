@@ -1,7 +1,7 @@
 {
   "version": 4,
-  "folioSiguiente": 35,
-  "generado": "2026-10-02T21:10:54.143Z",
+  "folioSiguiente": 41,
+  "generado": "2026-10-02T21:14:08.118Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -503,6 +503,108 @@
               "necesitaContraste": false,
               "porcentajeClaro": 0.0162,
               "porcentajeColorido": 0.6717
+            }
+          ]
+        },
+        {
+          "numero": "0035",
+          "sku": "UAJJ0035",
+          "imagenes": [
+            {
+              "archivo": "judas_21.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0797,
+              "porcentajeColorido": 0.585
+            }
+          ]
+        },
+        {
+          "numero": "0036",
+          "sku": "SDSD0036",
+          "imagenes": [
+            {
+              "archivo": "judas_22.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1849,
+              "porcentajeColorido": 0.5542
+            }
+          ]
+        },
+        {
+          "numero": "0037",
+          "sku": "DDJU0037",
+          "imagenes": [
+            {
+              "archivo": "judas_23.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0331,
+              "porcentajeColorido": 0.752
+            }
+          ]
+        },
+        {
+          "numero": "0038",
+          "sku": "AAAJ0038",
+          "imagenes": [
+            {
+              "archivo": "judas_24.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1133,
+              "porcentajeColorido": 0.5238
+            }
+          ]
+        },
+        {
+          "numero": "0039",
+          "sku": "JADS0039",
+          "imagenes": [
+            {
+              "archivo": "judas1.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.033,
+              "porcentajeColorido": 0.6035
+            }
+          ]
+        },
+        {
+          "numero": "0040",
+          "sku": "JDAJ0040",
+          "imagenes": [
+            {
+              "archivo": "judas2.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0648,
+              "porcentajeColorido": 0.6221
             }
           ]
         }
