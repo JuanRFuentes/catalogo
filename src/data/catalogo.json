@@ -1,7 +1,7 @@
 {
   "version": 4,
   "folioSiguiente": 20,
-  "generado": "2026-10-02T20:28:11.740Z",
+  "generado": "2026-10-02T20:33:04.213Z",
   "categorias": [
     {
       "nombre": "carros",
@@ -56,64 +56,6 @@
               "necesitaContraste": false,
               "porcentajeClaro": 0.0541,
               "porcentajeColorido": 0.6676
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nombre": "judas",
-      "carpeta": "judas",
-      "prefijo": "JUD",
-      "productos": [
-        {
-          "numero": "011",
-          "sku": "JUD011",
-          "imagenes": [
-            {
-              "archivo": "011-T-B.png",
-              "vista": "back",
-              "posicion": "top",
-              "vistaCodigo": "B",
-              "posicionCodigo": "T",
-              "estampadoClaro": true,
-              "necesitaContraste": true,
-              "porcentajeClaro": 0.0802,
-              "porcentajeColorido": 0.6141
-            }
-          ]
-        },
-        {
-          "numero": "0014",
-          "sku": "JUD0014",
-          "imagenes": [
-            {
-              "archivo": "0014-C-B.png",
-              "vista": "back",
-              "posicion": "top",
-              "vistaCodigo": "B",
-              "posicionCodigo": "T",
-              "estampadoClaro": true,
-              "necesitaContraste": true,
-              "porcentajeClaro": 0.0813,
-              "porcentajeColorido": 0.5966
-            }
-          ]
-        },
-        {
-          "numero": "0018",
-          "sku": "ECJS0018",
-          "imagenes": [
-            {
-              "archivo": "sjudassearch.png",
-              "vista": "front",
-              "posicion": "center",
-              "vistaCodigo": "F",
-              "posicionCodigo": "C",
-              "estampadoClaro": true,
-              "necesitaContraste": true,
-              "porcentajeClaro": 0.1337,
-              "porcentajeColorido": 0.606
             }
           ]
         }
