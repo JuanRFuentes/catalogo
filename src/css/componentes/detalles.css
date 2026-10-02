@@ -2322,9 +2322,10 @@
    quitar campos, tallas, colores ni acciones. */
 @media (min-width:1025px) and (max-width:1599px) {
     #homeProductDetails .details-inner {
-        max-width:880px;
+        max-width:860px;
         min-height:0;
-        gap:12px;
+        column-gap:26px;
+        row-gap:12px;
         grid-template-columns:minmax(0, 1fr) minmax(0, .9fr);
     }
     #homeProductDetails .details-visual {
