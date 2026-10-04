@@ -1,13 +1,218 @@
 {
   "version": 4,
-  "folioSiguiente": 56,
-  "generado": "2026-10-03T21:01:03.254Z",
+  "folioSiguiente": 68,
+  "generado": "2026-10-04T17:12:46.092Z",
   "categorias": [
     {
       "nombre": "HALLOWEEN",
       "carpeta": "HALLOWEEN",
       "prefijo": "HAL",
-      "productos": []
+      "productos": [
+        {
+          "numero": "0056",
+          "sku": "GHMT0056",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 02_49_14 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0328,
+              "porcentajeColorido": 0.5148
+            }
+          ]
+        },
+        {
+          "numero": "0057",
+          "sku": "ITIG0057",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 02_51_03 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0141,
+              "porcentajeColorido": 0.5329
+            }
+          ]
+        },
+        {
+          "numero": "0058",
+          "sku": "GPMT0058",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 02_55_57 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0745,
+              "porcentajeColorido": 0.3176
+            }
+          ]
+        },
+        {
+          "numero": "0059",
+          "sku": "PESE0059",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 02_59_13 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0811,
+              "porcentajeColorido": 0.4381
+            }
+          ]
+        },
+        {
+          "numero": "0060",
+          "sku": "TCEM0060",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_07_18 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0155,
+              "porcentajeColorido": 0.3722
+            }
+          ]
+        },
+        {
+          "numero": "0061",
+          "sku": "GEGT0061",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_10_17 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2861,
+              "porcentajeColorido": 0.2706
+            }
+          ]
+        },
+        {
+          "numero": "0062",
+          "sku": "TMTT0062",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_11_18 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2247,
+              "porcentajeColorido": 0.3326
+            }
+          ]
+        },
+        {
+          "numero": "0063",
+          "sku": "EGIP0063",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_12_21 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2256,
+              "porcentajeColorido": 0.2974
+            }
+          ]
+        },
+        {
+          "numero": "0064",
+          "sku": "AGEP0064",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_26_13 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1891,
+              "porcentajeColorido": 0.3954
+            }
+          ]
+        },
+        {
+          "numero": "0065",
+          "sku": "AGTC0065",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_35_39 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0099,
+              "porcentajeColorido": 0.6643
+            }
+          ]
+        },
+        {
+          "numero": "0066",
+          "sku": "EPET0066",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_47_58 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0844,
+              "porcentajeColorido": 0.4596
+            }
+          ]
+        },
+        {
+          "numero": "0067",
+          "sku": "GTGI0067",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 04_01_54 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0844,
+              "porcentajeColorido": 0.4596
+            }
+          ]
+        }
+      ]
     },
     {
       "nombre": "san judas",
