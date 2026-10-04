@@ -1,8 +1,14 @@
 {
   "version": 4,
   "folioSiguiente": 68,
-  "generado": "2026-10-04T17:13:52.043Z",
+  "generado": "2026-10-04T17:18:26.241Z",
   "categorias": [
+    {
+      "nombre": "AUTOS",
+      "carpeta": "AUTOS",
+      "prefijo": "AUT",
+      "productos": []
+    },
     {
       "nombre": "HALLOWEEN",
       "carpeta": "HALLOWEEN",
