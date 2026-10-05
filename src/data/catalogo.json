@@ -1,272 +1,831 @@
 {
   "version": 4,
-  "folioSiguiente": 19,
-  "generado": "2026-10-05T02:48:10.794Z",
+  "folioSiguiente": 68,
+  "generado": "2026-10-04T17:18:26.241Z",
   "categorias": [
     {
-      "nombre": "carros",
-      "carpeta": "carros",
-      "prefijo": "CAR",
-      "productos": [
-        {
-          "numero": "0015",
-          "sku": "CAR0015",
-          "imagenes": [
-            {
-              "archivo": "0015-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0252,
-              "porcentajeColorido": 0.529
-            }
-          ]
-        },
-        {
-          "numero": "0016",
-          "sku": "CAR0016",
-          "imagenes": [
-            {
-              "archivo": "0016-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0254,
-              "porcentajeColorido": 0.5395
-            }
-          ]
-        },
-        {
-          "numero": "0017",
-          "sku": "CAR0017",
-          "imagenes": [
-            {
-              "archivo": "0017-C-F.png",
-              "vista": "front",
-              "posicion": "top",
-              "vistaCodigo": "F",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0541,
-              "porcentajeColorido": 0.6676
-            }
-          ]
-        }
-      ]
+      "nombre": "AUTOS",
+      "carpeta": "AUTOS",
+      "prefijo": "AUT",
+      "productos": []
     },
     {
-      "nombre": "judas",
-      "carpeta": "judas",
-      "prefijo": "JUD",
+      "nombre": "HALLOWEEN",
+      "carpeta": "HALLOWEEN",
+      "prefijo": "HAL",
       "productos": [
         {
-          "numero": "011",
-          "sku": "JUD011",
+          "numero": "0056",
+          "sku": "GHMT0056",
           "imagenes": [
             {
-              "archivo": "011-T-B.png",
-              "vista": "back",
-              "posicion": "top",
-              "vistaCodigo": "B",
-              "posicionCodigo": "T",
-              "estampadoClaro": true,
-              "necesitaContraste": true,
-              "porcentajeClaro": 0.0802,
-              "porcentajeColorido": 0.6141
+              "archivo": "ChatGPT Image 28 sept 2026, 02_49_14 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0328,
+              "porcentajeColorido": 0.5148
             }
           ]
         },
         {
-          "numero": "0014",
-          "sku": "JUD0014",
+          "numero": "0057",
+          "sku": "ITIG0057",
           "imagenes": [
             {
-              "archivo": "0014-C-B.png",
-              "vista": "back",
-              "posicion": "top",
-              "vistaCodigo": "B",
-              "posicionCodigo": "T",
-              "estampadoClaro": true,
-              "necesitaContraste": true,
-              "porcentajeClaro": 0.0813,
-              "porcentajeColorido": 0.5966
+              "archivo": "ChatGPT Image 28 sept 2026, 02_51_03 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0141,
+              "porcentajeColorido": 0.5329
             }
           ]
         },
         {
-          "numero": "0018",
-          "sku": "ECJS0018",
+          "numero": "0058",
+          "sku": "GPMT0058",
           "imagenes": [
             {
-              "archivo": "sjudassearch.png",
+              "archivo": "ChatGPT Image 28 sept 2026, 02_55_57 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0745,
+              "porcentajeColorido": 0.3176
+            }
+          ]
+        },
+        {
+          "numero": "0059",
+          "sku": "PESE0059",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 02_59_13 p.m..png",
               "vista": "front",
               "posicion": "center",
               "vistaCodigo": "F",
               "posicionCodigo": "C",
               "estampadoClaro": true,
               "necesitaContraste": true,
-              "porcentajeClaro": 0.1337,
-              "porcentajeColorido": 0.606
+              "porcentajeClaro": 0.0811,
+              "porcentajeColorido": 0.4381
+            }
+          ]
+        },
+        {
+          "numero": "0060",
+          "sku": "TCEM0060",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_07_18 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0155,
+              "porcentajeColorido": 0.3722
+            }
+          ]
+        },
+        {
+          "numero": "0061",
+          "sku": "GEGT0061",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_10_17 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2861,
+              "porcentajeColorido": 0.2706
+            }
+          ]
+        },
+        {
+          "numero": "0062",
+          "sku": "TMTT0062",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_11_18 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2247,
+              "porcentajeColorido": 0.3326
+            }
+          ]
+        },
+        {
+          "numero": "0063",
+          "sku": "EGIP0063",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_12_21 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.2256,
+              "porcentajeColorido": 0.2974
+            }
+          ]
+        },
+        {
+          "numero": "0064",
+          "sku": "AGEP0064",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_26_13 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1891,
+              "porcentajeColorido": 0.3954
+            }
+          ]
+        },
+        {
+          "numero": "0065",
+          "sku": "AGTC0065",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_35_39 p.m..png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0099,
+              "porcentajeColorido": 0.6643
+            }
+          ]
+        },
+        {
+          "numero": "0066",
+          "sku": "EPET0066",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 03_47_58 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0844,
+              "porcentajeColorido": 0.4596
+            }
+          ]
+        },
+        {
+          "numero": "0067",
+          "sku": "GTGI0067",
+          "imagenes": [
+            {
+              "archivo": "ChatGPT Image 28 sept 2026, 04_01_54 p.m..png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.0844,
+              "porcentajeColorido": 0.4596
             }
           ]
         }
       ]
     },
     {
-      "nombre": "Maestros",
-      "carpeta": "Maestros",
-      "prefijo": "MAE",
+      "nombre": "san judas",
+      "carpeta": "san judas",
+      "prefijo": "SAN",
       "productos": [
         {
-          "numero": "006",
-          "sku": "MAE006",
+          "numero": "0020",
+          "sku": "DADD0020",
           "imagenes": [
             {
-              "archivo": "006-C-F.png",
+              "archivo": "judas_6.png",
               "vista": "front",
-              "posicion": "top",
+              "posicion": "center",
               "vistaCodigo": "F",
-              "posicionCodigo": "T",
+              "posicionCodigo": "C",
               "estampadoClaro": false,
               "necesitaContraste": false,
-              "porcentajeClaro": 0.0069,
-              "porcentajeColorido": 0.6618
-            },
-            {
-              "archivo": "006-T-B.png",
-              "vista": "back",
-              "posicion": "top",
-              "vistaCodigo": "B",
-              "posicionCodigo": "T",
-              "estampadoClaro": false,
-              "necesitaContraste": false,
-              "porcentajeClaro": 0.0393,
-              "porcentajeColorido": 0.6609
+              "porcentajeClaro": 0.0008,
+              "porcentajeColorido": 0.6139
             }
           ]
         },
         {
-          "numero": "007",
-          "sku": "MAE007",
+          "numero": "0021",
+          "sku": "DSUJ0021",
           "imagenes": [
             {
-              "archivo": "007-T-F.png",
+              "archivo": "judas_10.png",
               "vista": "front",
-              "posicion": "top",
+              "posicion": "center",
               "vistaCodigo": "F",
-              "posicionCodigo": "T",
+              "posicionCodigo": "C",
               "estampadoClaro": false,
               "necesitaContraste": false,
-              "porcentajeClaro": 0.0393,
-              "porcentajeColorido": 0.6609
+              "porcentajeClaro": 0.0525,
+              "porcentajeColorido": 0.4616
             }
           ]
         },
         {
-          "numero": "009",
-          "sku": "MAE009",
+          "numero": "0022",
+          "sku": "SUUU0022",
           "imagenes": [
             {
-              "archivo": "009-T-F.png",
+              "archivo": "judas_7.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 0.6528
+            }
+          ]
+        },
+        {
+          "numero": "0023",
+          "sku": "JDSJ0023",
+          "imagenes": [
+            {
+              "archivo": "judas_8.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.052,
+              "porcentajeColorido": 0.625
+            }
+          ]
+        },
+        {
+          "numero": "0024",
+          "sku": "SJDA0024",
+          "imagenes": [
+            {
+              "archivo": "judas_9.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0754,
+              "porcentajeColorido": 0.6295
+            }
+          ]
+        },
+        {
+          "numero": "0025",
+          "sku": "DAAA0025",
+          "imagenes": [
+            {
+              "archivo": "judas_11.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0457,
+              "porcentajeColorido": 0.3753
+            }
+          ]
+        },
+        {
+          "numero": "0026",
+          "sku": "UUAD0026",
+          "imagenes": [
+            {
+              "archivo": "judas_12.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0765,
+              "porcentajeColorido": 0.4997
+            }
+          ]
+        },
+        {
+          "numero": "0027",
+          "sku": "DUJD0027",
+          "imagenes": [
+            {
+              "archivo": "judas_13.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0113,
+              "porcentajeColorido": 0.5823
+            }
+          ]
+        },
+        {
+          "numero": "0028",
+          "sku": "ASSS0028",
+          "imagenes": [
+            {
+              "archivo": "judas_14.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0015,
+              "porcentajeColorido": 0.4178
+            }
+          ]
+        },
+        {
+          "numero": "0029",
+          "sku": "JUSA0029",
+          "imagenes": [
+            {
+              "archivo": "judas_15.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0042,
+              "porcentajeColorido": 0.2708
+            }
+          ]
+        },
+        {
+          "numero": "0030",
+          "sku": "DAJA0030",
+          "imagenes": [
+            {
+              "archivo": "judas_16.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0291,
+              "porcentajeColorido": 0.6521
+            }
+          ]
+        },
+        {
+          "numero": "0031",
+          "sku": "ADSJ0031",
+          "imagenes": [
+            {
+              "archivo": "judas_17.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0345,
+              "porcentajeColorido": 0.3892
+            }
+          ]
+        },
+        {
+          "numero": "0032",
+          "sku": "AAAD0032",
+          "imagenes": [
+            {
+              "archivo": "judas_18.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0177,
+              "porcentajeColorido": 0.2215
+            }
+          ]
+        },
+        {
+          "numero": "0033",
+          "sku": "SAAD0033",
+          "imagenes": [
+            {
+              "archivo": "judas_19.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0095,
+              "porcentajeColorido": 0.2934
+            }
+          ]
+        },
+        {
+          "numero": "0034",
+          "sku": "JSDA0034",
+          "imagenes": [
+            {
+              "archivo": "judas_20.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0162,
+              "porcentajeColorido": 0.6717
+            }
+          ]
+        },
+        {
+          "numero": "0035",
+          "sku": "UAJJ0035",
+          "imagenes": [
+            {
+              "archivo": "judas_21.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0797,
+              "porcentajeColorido": 0.585
+            }
+          ]
+        },
+        {
+          "numero": "0036",
+          "sku": "SDSD0036",
+          "imagenes": [
+            {
+              "archivo": "judas_22.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1849,
+              "porcentajeColorido": 0.5542
+            }
+          ]
+        },
+        {
+          "numero": "0037",
+          "sku": "DDJU0037",
+          "imagenes": [
+            {
+              "archivo": "judas_23.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0331,
+              "porcentajeColorido": 0.752
+            }
+          ]
+        },
+        {
+          "numero": "0038",
+          "sku": "AAAJ0038",
+          "imagenes": [
+            {
+              "archivo": "judas_24.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.1133,
+              "porcentajeColorido": 0.5238
+            }
+          ]
+        },
+        {
+          "numero": "0039",
+          "sku": "JADS0039",
+          "imagenes": [
+            {
+              "archivo": "judas1.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.033,
+              "porcentajeColorido": 0.6035
+            }
+          ]
+        },
+        {
+          "numero": "0040",
+          "sku": "JDAJ0040",
+          "imagenes": [
+            {
+              "archivo": "judas2.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0648,
+              "porcentajeColorido": 0.6221
+            }
+          ]
+        },
+        {
+          "numero": "0041",
+          "sku": "DUSU0041",
+          "imagenes": [
+            {
+              "archivo": "judas_5.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0001,
+              "porcentajeColorido": 0.6286
+            }
+          ]
+        },
+        {
+          "numero": "0042",
+          "sku": "ASAD0042",
+          "imagenes": [
+            {
+              "archivo": "judas3.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0466,
+              "porcentajeColorido": 0.7143
+            }
+          ]
+        },
+        {
+          "numero": "0043",
+          "sku": "SDDA0043",
+          "imagenes": [
+            {
+              "archivo": "judas4.png",
+              "vista": "front",
+              "posicion": "center",
+              "vistaCodigo": "F",
+              "posicionCodigo": "C",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0046,
+              "porcentajeColorido": 0.5817
+            }
+          ]
+        },
+        {
+          "numero": "0044",
+          "sku": "USHS0044",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-1.png",
               "vista": "front",
               "posicion": "top",
               "vistaCodigo": "F",
               "posicionCodigo": "T",
               "estampadoClaro": true,
               "necesitaContraste": true,
-              "porcentajeClaro": 0.1813,
-              "porcentajeColorido": 0.8129
+              "porcentajeClaro": 0.5683,
+              "porcentajeColorido": 0.2546
             }
           ]
         },
         {
-          "numero": "010",
-          "sku": "MAE010",
+          "numero": "0045",
+          "sku": "EABP0045",
           "imagenes": [
             {
-              "archivo": "010-C-F.png",
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-13.png",
               "vista": "front",
               "posicion": "top",
               "vistaCodigo": "F",
               "posicionCodigo": "T",
               "estampadoClaro": true,
               "necesitaContraste": true,
-              "porcentajeClaro": 0.4024,
-              "porcentajeColorido": 0.5841
+              "porcentajeClaro": 0.6154,
+              "porcentajeColorido": 0.0566
             }
           ]
         },
         {
-          "numero": "011",
-          "sku": "MAE011",
+          "numero": "0046",
+          "sku": "AASE0046",
           "imagenes": [
             {
-              "archivo": "011-T-B.png",
-              "vista": "back",
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-14.png",
+              "vista": "front",
               "posicion": "top",
-              "vistaCodigo": "B",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0.0751,
+              "porcentajeColorido": 0.3644
+            }
+          ]
+        },
+        {
+          "numero": "0047",
+          "sku": "WUSA0047",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-15.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
               "posicionCodigo": "T",
               "estampadoClaro": true,
               "necesitaContraste": true,
-              "porcentajeClaro": 0.0802,
-              "porcentajeColorido": 0.6141
+              "porcentajeClaro": 0.4091,
+              "porcentajeColorido": 0
             }
           ]
         },
         {
-          "numero": "0012",
-          "sku": "MAE0012",
+          "numero": "0048",
+          "sku": "BOAS0048",
           "imagenes": [
             {
-              "archivo": "0012-C-F.png",
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-6.png",
               "vista": "front",
               "posicion": "top",
               "vistaCodigo": "F",
               "posicionCodigo": "T",
               "estampadoClaro": false,
               "necesitaContraste": false,
-              "porcentajeClaro": 0.0075,
-              "porcentajeColorido": 0.223
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 0.7934
             }
           ]
         },
         {
-          "numero": "0013",
-          "sku": "MAE0013",
+          "numero": "0049",
+          "sku": "ENDU0049",
           "imagenes": [
             {
-              "archivo": "0013-C-F.png",
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-8.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.442,
+              "porcentajeColorido": 0.5544
+            }
+          ]
+        },
+        {
+          "numero": "0050",
+          "sku": "TPDD0050",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-16.png",
               "vista": "front",
               "posicion": "top",
               "vistaCodigo": "F",
               "posicionCodigo": "T",
               "estampadoClaro": false,
               "necesitaContraste": false,
-              "porcentajeClaro": 0.0004,
-              "porcentajeColorido": 0.3674
+              "porcentajeClaro": 0.05,
+              "porcentajeColorido": 0.5372
             }
           ]
-        }
-      ]
-    },
-    {
-      "nombre": "Navidad",
-      "carpeta": "Navidad",
-      "prefijo": "NAV",
-      "productos": [
+        },
         {
-          "numero": "001",
-          "sku": "NAV001",
+          "numero": "0051",
+          "sku": "DAAS0051",
           "imagenes": [
             {
-              "archivo": "001-t-f.png",
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-17.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": true,
+              "necesitaContraste": true,
+              "porcentajeClaro": 0.6069,
+              "porcentajeColorido": 0.3864
+            }
+          ]
+        },
+        {
+          "numero": "0052",
+          "sku": "ABOA0052",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-18.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 1
+            }
+          ]
+        },
+        {
+          "numero": "0053",
+          "sku": "ATJA0053",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-19.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 1
+            }
+          ]
+        },
+        {
+          "numero": "0054",
+          "sku": "DWPD0054",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-21.png",
+              "vista": "front",
+              "posicion": "top",
+              "vistaCodigo": "F",
+              "posicionCodigo": "T",
+              "estampadoClaro": false,
+              "necesitaContraste": false,
+              "porcentajeClaro": 0,
+              "porcentajeColorido": 1
+            }
+          ]
+        },
+        {
+          "numero": "0055",
+          "sku": "ENBO0055",
+          "imagenes": [
+            {
+              "archivo": "BSD-Sanjudastadeo2024-WhatsApp-3318751064-22.png",
               "vista": "front",
               "posicion": "top",
               "vistaCodigo": "F",
