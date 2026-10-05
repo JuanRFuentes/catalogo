@@ -410,7 +410,7 @@
 }
 
 /* Ver todo de Colección del mes abre únicamente la categoría seleccionada. */
-#catalogHome.category-view-active .home-app > section:not(#homeAllSection):not(#homeProductDetails),
+#catalogHome.category-view-active .home-app > section:not(#homeAllSection),
 #catalogHome.category-view-active .home-app > nav,
 #catalogHome.category-view-active .home-dots,
 #catalogHome.category-view-active .home-pill-decor {
