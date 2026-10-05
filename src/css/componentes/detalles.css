@@ -2113,6 +2113,12 @@
     min-height:0;
 }
 
+#catalogHome.details-active #homeProductDetails.is-open {
+    display:block !important;
+    visibility:visible;
+    opacity:1;
+}
+
 @media (max-width:600px) {
     #catalogHome.details-active .home-topbar {
         position:absolute;

@@ -275,6 +275,12 @@ async function abrirDetallesProducto(producto, seleccionInicial = null, quoteKey
         return;
     }
 
+    const catalogHome = document.getElementById('catalogHome');
+    if (catalogHome?.classList.contains('category-view-active')) {
+        seccion.dataset.restoreCategoryView = 'true';
+        catalogHome.classList.remove('category-view-active');
+    }
+
     const elemento = (id) => document.getElementById(id);
     seccion.classList.remove('color-selection-mode');
     elemento('detailsAddCart')?.classList.remove('is-saving-color');
@@ -722,7 +728,12 @@ function cerrarDetallesProducto() {
     resetearSelectorColoresDetalles();
 
     seccion.classList.remove('is-open');
-    document.getElementById('catalogHome')?.classList.remove('details-active');
+    const catalogHome = document.getElementById('catalogHome');
+    catalogHome?.classList.remove('details-active');
+    if (seccion.dataset.restoreCategoryView === 'true') {
+        catalogHome?.classList.add('category-view-active');
+        delete seccion.dataset.restoreCategoryView;
+    }
     actualizarBotonHeaderDetalles(false);
 
     seccion.setAttribute(
