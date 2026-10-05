@@ -708,7 +708,6 @@ async function abrirDetallesProducto(producto, seleccionInicial = null, quoteKey
         'false'
     );
 
-    const catalogHome = elemento('catalogHome');
     if (catalogHome) catalogHome.scrollTop = 0;
     catalogHome?.querySelector('.home-topbar')?.classList.remove('scrolled');
 
