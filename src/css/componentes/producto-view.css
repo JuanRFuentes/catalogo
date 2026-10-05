@@ -1171,12 +1171,9 @@
     font-weight:800;
     text-align:center;
 }
-.producto-view-chip-contexto--sku { font-size:clamp(17px, 2.2vw, 23px); }
-
-@media (max-width:1599px) {
-    .producto-view-chip-contexto--sku {
-        transform:translateY(8px);
-    }
+.producto-view-chip-contexto--sku {
+    font-size:clamp(17px, 2.2vw, 23px);
+    transform:translateY(10px);
 }
 
 .producto-view-customize {
